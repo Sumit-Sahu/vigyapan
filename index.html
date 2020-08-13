@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
+    <title>Vigayapan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="offset-5 col-3 align-self-center">
+                    <form class="float-left" role="search">
+                        <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search this site">
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-outline-secondary border">
+                                <span class="fa fa-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2 col-md-1 align-self-center">
+                    <span class="navbar-text">
+                        <a id="loginformlink">
+                            <span class="fa fa-sign-in"></span>Login
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!-- <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="#" ><img src="img/logo.png" alt="logo" height="40" width="100"></a>
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search this site">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default">
+                        <span class="fa fa-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <span class="navbar-text">
+                <a id="loginformlink">
+                    <span class="fa fa-sign-in"></span>Login
+                </a>
+            </span>
+        </div>
+    </nav> -->
+
+    <!-- banner section -->
+    <div class="container-fluid carousel-container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="./img/banner.jpg" alt="item1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="./img/banner2.jpg" alt="item2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="./img/banner3.jpg" alt="item3">
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#banner-carousel" data-slide-to="1" ></li>
+                        <li data-target="#banner-carousel" data-slide-to="2" ></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #banner section -->
+
+    <!-- search section -->
+    <section class="search-section">
+        <div class="container">
+            <form action="#">
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-4 p=0">
+                        <select class="form-control search-slt" name="" id="">
+                            <option value="">Select City</option>
+                            <option value="Agartala">Agartala</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Amaravati">Amaravati</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Dehradun">Dehradun</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Dispur">Dispur</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Guwahati">Guwahati</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Imphal">Imphal</option>
+                            <option value="Itanagar">Itanagar</option>
+                            <option value="Kohima">Kohima</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="New Delhi">New Delhi</option>
+                            <option value="Panji">Panji</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Raipur">Raipur</option>
+                            <option value="Ranchi">Ranchi</option>
+                            <option value="Shilong">Shilong</option>
+                            <option value="Shimla">Shimla</option>
+                            <option value="Srinagar">Srinagar</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 p=0">
+                        <select class="form-control search-slt" name="" id="">
+                            <option value="">Select Category</option>
+                            <option value="Airport">Airport</option>
+                            <option value="Digital">Digital</option>
+                            <option value="Outdoor">Outdoor</option>
+                            <option value="Cinema">Cinema</option>
+                            <option value="Office Space">Office-Space</option>
+                            <option value="Mall Branding">Mall-Branding</option>
+                            <option value="Transit Media">Transit-Media</option>
+                            <option value="Non Traditional">Non Traditional</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-4 p=0">
+                        <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- #search section -->
+
+    <!-- brand section -->
+
+    <div class="container brand-container">
+        <h2>Brand With Us</h2>
+        <div class="brand-slider slider">
+            <div class="slide">
+                <img class="img-fluid" src="./img/brands/brand1.jpg" alt="brand1">
+            </div>
+            <div class="slide">
+                <img class="img-fluid" src="./img/brands/brand2.jpg" alt="brand1">
+            </div>
+            <div class="slide">
+                <img class="img-fluid" src="./img/brands/brand3.jpg" alt="brand1">
+            </div>
+            <div class="slide">
+                <img class="img-fluid" src="./img/brands/brand4.jpg" alt="brand1">
+            </div>
+            <div class="slide">
+                <img class="img-fluid" src="./img/brands/brand5.jpg" alt="brand1">
+            </div>
+            <div class="slide">
+                <img class="img-fluid" src="./img/brands/brand6.jpg" alt="brand1">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg_content testimonials">
+        <div class="row">
+            <div class="offset-1 col-md-10 pt-4">
+                <div class="carousel slide" id="testimonials-carousel" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <blockquote>
+                                <p>Team of highly efficient and result oriented people. Impressed by their dedication towards client concerns.</p>
+                            </blockquote>
+                            <small>
+                                <img class="rounded-circle" src="./img/tarun_bhatia.jpg" alt="photo">
+                                <div>
+                                    John Pais<br>
+                                    Leading KPO Firm
+                                </div>
+                            </small>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote>
+                                <p>Team of highly efficient and result oriented people. Impressed by their dedication towards client concerns.</p>
+                            </blockquote>
+                            <small>
+                                <img class="rounded-circle" src="./img/tarun_bhatia.jpg" alt="photo">
+                                <div>
+                                    John Pais<br>
+                                    Leading KPO Firm
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #brand section -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4">
+                    <h5>ABOUT US</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Become Agency Partner</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>SUPPORT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">List With Us</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>FOLLOW</h5>
+                    <ul class="list-unstyled">
+                        <li><a  href="#"><span class=" fa fa-facebook fa-fw"></span>Facebook</a></li>
+                        <li><a  href="#"><span class=" fa fa-twitter fa-fw"></span>Twitter</a></li>
+                        <li><a  href=""><span class=" fa fa-linkedin fa-fw"></span>LinkedIn</a></li>
+                        <li><a  href="#"><span class=" fa fa-blog fa-fw"></span>Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+
+
+    <!-- <header class="jumbotron jumbotron-fluid">
+        <div class="row">
+            <div class="col-6 col-sm-2 logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="Vigyapan" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 search align-self-center">
+                <form class="form-inline" action="">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div> -->
+        
+    <!-- </header> -->
+
+
+
+
+
+
+
+
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+     <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- slick (used for carousel) -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+     <script>
+         $(document).ready(function() {
+            $('.banner-carousel').carousel({
+                interval: 2000
+            });
+            $('.testimonials-carousel').carousel({
+                interval: 1000
+            });
+            $('.brand-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows:false,
+                dots: false,
+                pauseOnHover: false,
+                
+            });
+
+         });
+     </script>
+</body>
+</html>

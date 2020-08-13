@@ -1,0 +1,214 @@
+body{
+    width: 100%;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+/* header */
+#header {
+    background-color: rgb(57, 168, 212);
+    position: fixed;
+    padding: 5px 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    color: white;
+}
+
+#header .logo {
+    float: left;
+    margin-right: 50px;
+}
+
+#header .logo img{
+    height: 53px;
+}
+
+#header form {
+    margin: auto;
+}
+
+#header button {
+    background-color: white;
+}
+
+#header input:focus {
+    outline: 0;
+    border-color: initial;
+    box-shadow: none;
+}
+
+#header button:hover {
+    background-color: gray;
+}
+
+/* .navbar-dark {
+    background-color: rgb(57, 168, 212);
+} */
+
+/* .row-content { */
+    /* position: relative; */
+    /* border-bottom: 1px ridge;
+    min-height: 50px;
+    max-height: 100px ;
+ } */
+
+
+/* bannerCarousel */
+
+.carousel-container {
+    padding: 5px 5px;
+    height: 60%;
+}
+
+#banner-carousel {
+    width: 100%;
+}
+
+/* #banner-carousel .carousel-item {
+    height: 400px;
+} */
+
+
+ /* search-section */
+.search-section {
+    padding: 2rem;
+}
+
+.search-slt{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+ }
+
+.wrn-btn {
+     width: 100%;
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+ /* brand section */
+
+.brand-container {
+    padding-bottom: 5px;
+}
+
+.brand-container img {
+    width: 100%;
+    /* padding: 5px;
+    width: 150px;
+    height: 150px; */
+}
+
+.slick-slide {
+    margin: 0px 20px;
+    max-width: 150px;
+}
+
+/* testimonials */
+.bg_content.testimonials {
+    background-image: url('../img/test1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 4%;
+}
+.testimonials .row {
+    /* padding: 0px 15px;
+    vertical-align: middle;
+    color: white;
+    text-align: center; */
+    min-height: 600p;
+}
+.testimonials .carousel {
+    padding: 0px 10px 40px 10px;
+}
+
+.testimonials .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.testimonials .carousel-item {
+    padding: 15px 0px;
+    font-family: Georgia, cursive;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.testimonials .carousel-item blockquote {
+    background-size: 120px auto;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.testimonials .carousel-item small img {
+    width: 75px;
+    height: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+ .footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0px;
+ }
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .footer .social-link {
+    padding-left: 10px;
+}
+.footer .social-link-icon {
+    position: absolute;
+    left: 0;
+} */
+
+
+
+
+
+
+
+
+/* .jumbotron {
+    margin: 0px auto;
+    padding: 0px 5px;
+    background: #9575CD;
+    color: floralwhite;
+ }
+
+/* .jumbotron .search {
+    
+} */
+/* 
+.jumbotron .search button{
+    border: none;
+    cursor: pointer;
+}
+
+.jumbotron .search input {
+    border: none;
+} */
+/* 
+.jumbotron .search form {
+    justify-self: center;
+} */ 
