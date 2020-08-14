@@ -212,3 +212,61 @@ body{
 .jumbotron .search form {
     justify-self: center;
 } */ 
+
+
+/* contact us  */
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #c2b7b1;
+}
+
+.contact .info {
+    padding: 30px;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-color: #eb5d1e;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12)
+}
+
+.contact .info i {
+    display: flex;
+    float: left;
+    color: #eb5d1e;
+    background-color:#fdf1ec ;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .info h4 {
+    padding-left: 60px;
+    width: 100%;
+}
+.contact .info p {
+    padding: 0px 0px 15px 60px;
+    margin-bottom: 20px;
+    color: #ab9d95;
+}
+
+.contact .contact-form {
+    padding: 30px;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-color: #eb5d1e;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12)
+}
+
+.contact .contact-form button {
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:  #eb5d1e;
+    color: white;
+}
