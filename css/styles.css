@@ -1,30 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body{
+    background: #fff;
+    color: #666666;
+    /* font-family: ; */
     width: 100%;
-    padding-top: 70px;
+    /* padding-top: 70px; */
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 /* header */
 #header {
-    background-color: rgb(57, 168, 212);
+    background-color: rgba(255, 255, 255, 0.6);
     position: fixed;
     padding: 5px 0;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index: 1000;
-    color: white;
+    color: rgb(26, 24, 24);
 }
 
 #header .logo {
-    float: left;
     margin-right: 50px;
+    float: left;
 }
 
 #header .logo img{
     height: 53px;
 }
 
+#nav-container {
+    
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    float: left;
+    margin-left: 1px;
+}
+
+.nav-menu li a {
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(26, 24, 24);
+    font-weight: 700;
+}
+
+#header .search {
+    background: none;
+    outline: 0px;
+    border: 0px;
+    cursor: pointer;
+}
+
+#header .input {
+  }
+
+#header .login-link {
+    float: right;
+    margin-right: 10%;
+}
+#header .login-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(26, 24, 24);
+    font-weight: 700;
+}
+
+/* 
 #header form {
     margin: auto;
 }
@@ -41,52 +89,41 @@ body{
 
 #header button:hover {
     background-color: gray;
-}
-
-/* .navbar-dark {
-    background-color: rgb(57, 168, 212);
 } */
 
-/* .row-content { */
-    /* position: relative; */
-    /* border-bottom: 1px ridge;
-    min-height: 50px;
-    max-height: 100px ;
- } */
 
+/* intro Carousel */
 
-/* bannerCarousel */
-
-.carousel-container {
-    padding: 5px 5px;
-    height: 60%;
+#introCarousel {
+    position: relative;
 }
 
-#banner-carousel {
+#introCarousel .search-section {
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 0px;
     width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 2%;
+    z-index: 1;
 }
 
-/* #banner-carousel .carousel-item {
-    height: 400px;
-} */
+#introCarousel .search-section .search-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 30px;
+}
+
+
+#introCarousel .carousel-item {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
 
 
  /* search-section */
-.search-section {
-    padding: 2rem;
-}
-
-.search-slt{
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid #ccc;
- }
-
-.wrn-btn {
-     width: 100%;
-     font-size: 16px;
-     font-weight: 400;
- }
 
  /* brand section */
 

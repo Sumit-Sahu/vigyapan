@@ -5,23 +5,52 @@
     <link rel="icon" type="image/png" href="./img/logo.png"/>
     <title>Vigayapan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+    <!-- custom css -->
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
     <!-- header -->
     <header id="header">
         <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <nav id="nav-container">
+            <ul class="nav-menu">
+                <li class=""><a href="#">Home</a></li>
+                <li class=""><a href="#">About</a></li>
+                <li class=""><a href="#">Services</a></li>
+                <li class=""><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <form class="form-inline float-left" action="" role="search">
+            <!-- <input class="input" type="text" placeholder="search..."> -->
+            <button type="submit" class="search"><span class="fa fa-search fa-2x"></span></button>
+        </form>
+        <div class="login-link">
+            <a id="loginformlink">
+                <span class="fa fa-sign-in"></span>Login
+            </a>
+        </div>
+        <!-- <div class="container">
             <div class="row">
                 <div class="logo">
                     <a href="#">
@@ -48,33 +77,87 @@
                     </span>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
-    <!-- #header -->
+    <!--===== end header =====-->
 
-    <!-- <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
-        <div class="container">
-            <a class="navbar-brand mr-auto" href="#" ><img src="img/logo.png" alt="logo" height="40" width="100"></a>
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search this site">
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default">
-                        <span class="fa fa-search"></span>
-                        </button>
-                    </span>
+    <!-- start intro section -->
+    <section class="" id="intro">
+        <div class="intro-container">
+            <div class="carousel" id="introCarousel" data-ride="carousel">
+                <div class="search-section">
+                    <div class="container search-container">
+                        <form action="">
+                            <div class="form-row justify-content-center">
+                                <div class="col-4">
+                                    <select class="form-control search-slt" name="" id="">
+                                        <option value="">Select City</option>
+                                        <option value="Agartala">Agartala</option>
+                                        <option value="Ahmedabad">Ahmedabad</option>
+                                        <option value="Amaravati">Amaravati</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Bhubaneswar">Bhubaneswar</option>
+                                        <option value="Chandigarh">Chandigarh</option>
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Dehradun">Dehradun</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Dispur">Dispur</option>
+                                        <option value="Gandhinagar">Gandhinagar</option>
+                                        <option value="Guwahati">Guwahati</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Imphal">Imphal</option>
+                                        <option value="Itanagar">Itanagar</option>
+                                        <option value="Kohima">Kohima</option>
+                                        <option value="Kolkata">Kolkata</option>
+                                        <option value="Lucknow">Lucknow</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                        <option value="New Delhi">New Delhi</option>
+                                        <option value="Panji">Panji</option>
+                                        <option value="Patna">Patna</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Raipur">Raipur</option>
+                                        <option value="Ranchi">Ranchi</option>
+                                        <option value="Shilong">Shilong</option>
+                                        <option value="Shimla">Shimla</option>
+                                        <option value="Srinagar">Srinagar</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-control search-slt" name="" id="">
+                                        <option value="">Select Category</option>
+                                        <option value="Airport">Airport</option>
+                                        <option value="Digital">Digital</option>
+                                        <option value="Outdoor">Outdoor</option>
+                                        <option value="Cinema">Cinema</option>
+                                        <option value="Office Space">Office-Space</option>
+                                        <option value="Mall Branding">Mall-Branding</option>
+                                        <option value="Transit Media">Transit-Media</option>
+                                        <option value="Non Traditional">Non Traditional</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn"><span class="fa fa-search"></span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
-            <span class="navbar-text">
-                <a id="loginformlink">
-                    <span class="fa fa-sign-in"></span>Login
-                </a>
-            </span>
+                
+                    
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./img/new-york-1930656_1280.jpg);">  
+                    </div>
+                    <div class="carousel-item " style="background-image: url(./img/new-york-1930656_1280.jpg);"> 
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav> -->
+    </section>
+    <!-- end intro section -->
 
     <!-- banner section -->
-    <div class="container-fluid carousel-container">
+    <!-- <div class="container-fluid carousel-container">
         <div class="row row-content">
             <div class="col">
                 <div id="banner-carousel" class="carousel slide" data-ride="carousel">
@@ -104,69 +187,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- #banner section -->
-
-    <!-- search section -->
-    <section class="search-section">
-        <div class="container">
-            <form action="#">
-                <div class="row no-gutters">
-                    <div class="col-12 col-md-4 p=0">
-                        <select class="form-control search-slt" name="" id="">
-                            <option value="">Select City</option>
-                            <option value="Agartala">Agartala</option>
-                            <option value="Ahmedabad">Ahmedabad</option>
-                            <option value="Amaravati">Amaravati</option>
-                            <option value="Bangalore">Bangalore</option>
-                            <option value="Bhopal">Bhopal</option>
-                            <option value="Bhubaneswar">Bhubaneswar</option>
-                            <option value="Chandigarh">Chandigarh</option>
-                            <option value="Chennai">Chennai</option>
-                            <option value="Dehradun">Dehradun</option>
-                            <option value="Delhi">Delhi</option>
-                            <option value="Dispur">Dispur</option>
-                            <option value="Gandhinagar">Gandhinagar</option>
-                            <option value="Guwahati">Guwahati</option>
-                            <option value="Hyderabad">Hyderabad</option>
-                            <option value="Imphal">Imphal</option>
-                            <option value="Itanagar">Itanagar</option>
-                            <option value="Kohima">Kohima</option>
-                            <option value="Kolkata">Kolkata</option>
-                            <option value="Lucknow">Lucknow</option>
-                            <option value="Mumbai">Mumbai</option>
-                            <option value="New Delhi">New Delhi</option>
-                            <option value="Panji">Panji</option>
-                            <option value="Patna">Patna</option>
-                            <option value="Pune">Pune</option>
-                            <option value="Raipur">Raipur</option>
-                            <option value="Ranchi">Ranchi</option>
-                            <option value="Shilong">Shilong</option>
-                            <option value="Shimla">Shimla</option>
-                            <option value="Srinagar">Srinagar</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-4 p=0">
-                        <select class="form-control search-slt" name="" id="">
-                            <option value="">Select Category</option>
-                            <option value="Airport">Airport</option>
-                            <option value="Digital">Digital</option>
-                            <option value="Outdoor">Outdoor</option>
-                            <option value="Cinema">Cinema</option>
-                            <option value="Office Space">Office-Space</option>
-                            <option value="Mall Branding">Mall-Branding</option>
-                            <option value="Transit Media">Transit-Media</option>
-                            <option value="Non Traditional">Non Traditional</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-md-4 p=0">
-                        <button type="button" class="btn btn-danger wrn-btn">Search</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- #search section -->
 
     <!-- brand section -->
 
@@ -193,7 +215,8 @@
             </div>
         </div>
     </div>
-
+    <!--===== end brand section =====-->
+    <!-- start testimonials section -->
     <div class="bg_content testimonials">
         <div class="row">
             <div class="offset-1 col-md-10 pt-4">
@@ -232,7 +255,7 @@
             </div>
         </div>
     </div>
-    <!-- #brand section -->
+    <!--===== end testimonials section =====-->
 
 
     <!-- footer -->
@@ -269,34 +292,8 @@
             </div>
         </div>
     </footer>
-    <!-- #footer -->
 
-
-
-    <!-- <header class="jumbotron jumbotron-fluid">
-        <div class="row">
-            <div class="col-6 col-sm-2 logo">
-                <a href="#">
-                    <img src="./img/logo.png" alt="Vigyapan" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-12 col-sm-6 search align-self-center">
-                <form class="form-inline" action="">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div> -->
-        
-    <!-- </header> -->
-
-
-
-
-
-
-
-
+    <!--===== end footer section =====-->
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
      <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -312,7 +309,7 @@
 
     <script>
          $(document).ready(function() {
-            $('.banner-carousel').carousel({
+            $('.introCarousel').carousel({
                 interval: 2000
             });
             $('.testimonials-carousel').carousel({
