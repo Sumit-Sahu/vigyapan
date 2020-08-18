@@ -192,7 +192,46 @@
 
     <!-- brand section -->
 
-    <div class="container brand-container">
+    <section id="brand-section">
+        <div class="container brand-container">
+            <h2>Our Partners</h2>
+            <div class="brand-slider slider">
+                <div class="slide">
+                    <img class="img-fluid" src="./img/brands/brand1.jpg" alt="brand1">
+                    <a href="#"><h2>Brand</h2></a>
+                    <p>some info</p>
+                </div>
+                <div class="slide">
+                    <img class="img-fluid" src="./img/brands/brand2.jpg" alt="brand1">
+                    <a href="#"><h2>Brand</h2></a>
+                    <p>some info</p>
+                </div>
+                <div class="slide">
+                    <img class="img-fluid" src="./img/brands/brand3.jpg" alt="brand1">
+                    <a href="#"><h2>Brand</h2></a>
+                    <p>some info</p>
+                </div>
+                <div class="slide">
+                    <img class="img-fluid" src="./img/brands/brand4.jpg" alt="brand1">
+                    <a href="#"><h2>Brand</h2></a>
+                    <p>some info</p>
+                </div>
+                <div class="slide">
+                    <img class="img-fluid" src="./img/brands/brand5.jpg" alt="brand1">
+                    <a href="#"><h2>Brand</h2></a>
+                    <p>some info</p>
+                </div>
+                <div class="slide">
+                    <img class="img-fluid" src="./img/brands/brand6.jpg" alt="brand1">
+                    <a href="#"><h2>Brand</h2></a>
+                    <p>some info</p>
+                </div>
+            </div> 
+
+        </div>
+    </section>
+
+    <!-- <div class="container brand-container">
         <h2>Brand With Us</h2>
         <div class="brand-slider slider">
             <div class="slide">
@@ -214,7 +253,7 @@
                 <img class="img-fluid" src="./img/brands/brand6.jpg" alt="brand1">
             </div>
         </div>
-    </div>
+    </div> -->
     <!--===== end brand section =====-->
     <!-- start testimonials section -->
     <div class="bg_content testimonials">
@@ -316,13 +355,15 @@
                 interval: 1000
             });
             $('.brand-slider').slick({
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1500,
                 arrows:false,
                 dots: false,
                 pauseOnHover: false,
+                infinite:true,
+                dots:true,
                 
             });
 
