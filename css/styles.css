@@ -71,25 +71,18 @@ body{
     color: rgb(26, 24, 24);
     font-weight: 700;
 }
-
-/* 
-#header form {
-    margin: auto;
+/* end header */
+/* general section css */
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    /* color: #c2b7b1; */
 }
 
-#header button {
-    background-color: white;
-}
-
-#header input:focus {
-    outline: 0;
-    border-color: initial;
-    box-shadow: none;
-}
-
-#header button:hover {
-    background-color: gray;
-} */
 
 
 /* intro Carousel */
@@ -178,23 +171,20 @@ body{
 
 /* testimonials */
 .bg_content.testimonials {
-    background-image: url('../img/test1.jpg');
+    background-image: url('../img/testi.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    margin-top: 4%;
 }
 .testimonials .row {
-    /* padding: 0px 15px;
-    vertical-align: middle;
-    color: white;
-    text-align: center; */
-    min-height: 600p;
+    /* min-height: 600px; */
 }
 .testimonials .carousel {
     padding: 0px 10px 40px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(32, 31, 31, 0.2);
 }
 
 .testimonials .carousel-indicators li {
@@ -209,7 +199,7 @@ body{
     font-style: italic;
     font-size: 24px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .testimonials .carousel-item blockquote {
@@ -244,56 +234,8 @@ body{
     color: white;
 }
 
-/* .footer .social-link {
-    padding-left: 10px;
-}
-.footer .social-link-icon {
-    position: absolute;
-    left: 0;
-} */
-
-
-
-
-
-
-
-
-/* .jumbotron {
-    margin: 0px auto;
-    padding: 0px 5px;
-    background: #9575CD;
-    color: floralwhite;
- }
-
-/* .jumbotron .search {
-    
-} */
-/* 
-.jumbotron .search button{
-    border: none;
-    cursor: pointer;
-}
-
-.jumbotron .search input {
-    border: none;
-} */
-/* 
-.jumbotron .search form {
-    justify-self: center;
-} */ 
-
 
 /* contact us  */
-.section-title {
-    text-align: center;
-    padding-bottom: 30px;
-}
-.section-title h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #c2b7b1;
-}
 
 .contact .info {
     padding: 30px;
