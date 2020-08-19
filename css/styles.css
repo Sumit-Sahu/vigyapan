@@ -75,15 +75,31 @@ body{
     font-weight: 700;
 }
 /* end header */
+
 /* general section css */
 .section-title {
     text-align: center;
     padding-bottom: 30px;
+    
 }
 .section-title h2 {
     font-size: 2rem;
     font-weight: 700;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
     /* color: #c2b7b1; */
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(246, 75, 60);
+    height: 0.2rem;
+    width: 50%;
+    left: 25%;
+    bottom: -15px;
+    margin-top: 0px;
 }
 
 
