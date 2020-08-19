@@ -4,7 +4,8 @@ Repository for website building.
 
 ## Dependencies
 * bootstrap
-* font-awesomejquery
+* font-awesome
+* jquery
 * popper.js
 * slick
 
