@@ -116,16 +116,16 @@ body{
     bottom: 0px;
     width: 100%;
     margin-bottom: 0px;
-    padding-bottom: 2%;
+    padding: 2rem 0px;
     z-index: 1;
 }
 
 #introCarousel .search-section .search-container {
-    margin-top: 20px;
-    padding: 15px;
+    width: 100%;
     background: white;
     border-radius: 30px;
 }
+
 
 
 #introCarousel .carousel-item {
@@ -133,6 +133,29 @@ body{
     width: 100%;
     background-size: cover;
 }
+
+#introCarousel .search-section .search-container .select-srch {
+    height: 4rem;
+    font-size: 1.4em;
+    border: 0;
+    color: #777778;
+    width: 100%;
+    appearance: none;
+}
+#introCarousel .search-section .search-container .borderRight {
+    border-right: 1px solid #cecbcb;
+}
+#introCarousel .search-section .search-container i {
+    padding-right: 5px;
+    font-size: 18px;
+}
+#introCarousel .search-section .search-container button {
+    border-radius: 50%;
+    border: 1px solid rgb(246, 75, 60);
+    background-color: rgb(246, 75, 60);
+    color: white;
+}
+
 
  /* brand section */
  #brand-section {

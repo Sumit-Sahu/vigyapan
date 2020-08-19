@@ -9,16 +9,15 @@
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-
-    <!-- font awesome -->
-    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/283773f301.js" crossorigin="anonymous"></script>    
+    
     <!-- custom css -->
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -88,9 +87,10 @@
                 <div class="search-section">
                     <div class="container search-container">
                         <form action="">
-                            <div class="form-row justify-content-center">
-                                <div class="col-4">
-                                    <select class="form-control search-slt" name="" id="">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-sm-6 d-flex align-items-center">
+                                    <i class="fa fa-city"></i>
+                                    <select class="select-srch" name="" id="">
                                         <option value="">Select City</option>
                                         <option value="Agartala">Agartala</option>
                                         <option value="Ahmedabad">Ahmedabad</option>
@@ -123,8 +123,10 @@
                                         <option value="Srinagar">Srinagar</option>
                                     </select>
                                 </div>
-                                <div class="col-4">
-                                    <select class="form-control search-slt" name="" id="">
+                                <div class="borderRight"></div>
+                                <div class="col-sm-6 d-flex align-items-center">
+                                    <i class="fa fa-list "></i>
+                                    <select class="select-srch" name="" id="">
                                         <option value="">Select Category</option>
                                         <option value="Airport">Airport</option>
                                         <option value="Digital">Digital</option>
@@ -135,10 +137,9 @@
                                         <option value="Transit Media">Transit-Media</option>
                                         <option value="Non Traditional">Non Traditional</option>
                                     </select>
+                                    <button type="button" class=""><span class="fa fa-search"></span></button>
                                 </div>
-                                <div class="col-2">
-                                    <button type="button" class="btn"><span class="fa fa-search"></span></button>
-                                </div>
+                                
                             </div>
                         </form>
                     </div>
