@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body{
     background: #fff;
     color: #666666;
@@ -78,7 +81,7 @@ body{
     padding-bottom: 30px;
 }
 .section-title h2 {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 700;
     /* color: #c2b7b1; */
 }
@@ -128,7 +131,7 @@ body{
     background-color:rgba(255, 255, 255, 0.8) ;
 }
 
-.slide{
+.brand-container .slide{
     
     border: 1px solid rgba(32, 31, 31, 0.8) ;
     background-color: white;
@@ -139,21 +142,21 @@ body{
     height: 80%;
 }
 
-.slick-slide {
+.brand-container .slick-slide {
     margin:1.5rem;
     padding: 1.5rem;
 }
 
-.slick-dots {
+.brand-container .slick-dots {
     display: flex;
     justify-content: center;
     list-style-type: none;
 
 }
-.slick-dots li {
+.brand-container .slick-dots li {
     margin: 0 0.6rem;
 }
-.slick-dots button {
+.brand-container .slick-dots button {
     display: block;
     border: 0.1rem solid rgba(32, 31, 31, 0.2);
     width: 0.5rem;
@@ -163,28 +166,27 @@ body{
     text-indent: -9999px;
 }
 
-.slick-dots .slick-active button{
+.brand-container .slick-dots .slick-active button{
     transform: scale(2);
     box-shadow: 0px 3px 5px 1px rgb(26, 24, 24);
 }
 
 
 /* testimonials */
-.bg_content.testimonials {
+.bg_content{
     background-image: url('../img/testi.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
 }
-.testimonials .row {
-    /* min-height: 600px; */
-}
-.testimonials .carousel {
-    padding: 0px 10px 40px 10px;
+.testimonials{
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(32, 31, 31, 0.2);
+}
+
+.testimonials .carousel {
+    padding: 0px 10px 40px 10px;
 }
 
 .testimonials .carousel-indicators li {
@@ -203,7 +205,6 @@ body{
 }
 
 .testimonials .carousel-item blockquote {
-    background-size: 120px auto;
     font-size: 24px;
     text-align: center;
     line-height: 28px;
@@ -214,24 +215,56 @@ body{
     height: 75px;
 }
 
-
-
-
-
-
-
-
-
-
- .footer {
-    background-color: #111;
-    color: white;
-    padding: 20px 0px;
- }
-
-.footer a {
+/* footer */
+.footer {
+    padding: 90px 0px 50px;
+    background-color: rgb(239, 254, 255);
+}
+.footer h3.title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 35px;
+    position: relative;
+    text-transform: capitalize;
+}
+.footer h3.title::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(246, 75, 60);
+    height: 2px;
+    width: 40px;
+    left: 0;
+    bottom: -15px;
+    margin-top: 0px;
+}
+.footer .footer-widget.quick-links ul li{
+    /* border-bottom: 1px dashed #454545; */
+    margin-bottom: 8px;
+}
+.footer .footer-widget.quick-links ul li a{
+    color: #8f8484;
     text-decoration: none;
-    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    padding-bottom: 6px;
+}
+.footer .footer-widget.quick-links ul li a:before {
+    color: blue;
+    content: '\f105';
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.footer .footer-widget.quick-links ul li a:hover {
+    color: rgb(246, 75, 60);
 }
 
 
