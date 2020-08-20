@@ -283,11 +283,35 @@ body{
     bottom: -15px;
     margin-top: 0px;
 }
-.footer .footer-widget.quick-links ul li{
+.footer-widget .footer-contact {
+    margin-top: 20px;
+}
+.footer-widget .footer-contact li {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+.footer-widget .footer-contact li i {
+    padding-right: 18px;
+    color: blue;
+}
+.footer-widget .footer-social li{
+    display: inline-block;
+}
+.footer-widget .footer-social li a {
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer-widget.quick-links ul li{
     /* border-bottom: 1px dashed #454545; */
     margin-bottom: 8px;
 }
-.footer .footer-widget.quick-links ul li a{
+.footer-widget.quick-links ul li a{
     color: #8f8484;
     text-decoration: none;
     font-size: 16px;
@@ -298,7 +322,7 @@ body{
     padding-left: 15px;
     padding-bottom: 6px;
 }
-.footer .footer-widget.quick-links ul li a:before {
+.footer-widget.quick-links ul li a:before {
     color: blue;
     content: '\f105';
     font-family: "FontAwesome";
@@ -308,7 +332,7 @@ body{
     font-size: 14px;
     line-height: 16px;
 }
-.footer .footer-widget.quick-links ul li a:hover {
+.footer-widget.quick-links ul li a:hover {
     color: rgb(246, 75, 60);
 }
 
