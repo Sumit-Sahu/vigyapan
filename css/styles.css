@@ -22,51 +22,84 @@ body{
     right: 0px;
     z-index: 1000;
     color: rgb(26, 24, 24);
+    transition:all 0.5s
+}
+
+#header.header-scrolled {
+    background-color: white;
+    transition:all 0.5s
 }
 
 #header .logo {
     margin-right: 50px;
-    float: left;
 }
 
 #header .logo img{
     height: 53px;
 }
 
-#nav-container {
-    
-}
-
 .nav-menu {
     list-style: none;
+    margin: 0;
 }
 
 .nav-menu li {
-    float: left;
-    margin-left: 1px;
+    display: inline-block;
 }
 
 .nav-menu li a {
-    padding: 12px 20px;
+    padding: 12px 10px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(26, 24, 24);
     font-weight: 700;
 }
 
-#header .search {
-    background: none;
-    outline: 0px;
-    border: 0px;
+#header .searchbox {
+    position: relative;
+    display: block;
+    /* float: right; */
+
+}
+#header .searchbox-input{
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
+    background:#F2EAED;
+    width: 0;
+    height:50px;
+    margin:0;
+    padding:0px;
+    font-size:20px;
+    color:black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+}
+#header .searchbox-input-open {
+    width: 100%;
+}
+#header .searchbox-icon,.searchbox-submit {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
     cursor: pointer;
+    background:rgb(246, 75, 60);
+    display: block;
 }
 
-#header .input {
-  }
 
 #header .login-link {
-    float: right;
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 #header .login-link a{
     text-decoration: none;
