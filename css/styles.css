@@ -476,4 +476,39 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+.who-we-are {
+  background-color: #f1f1f1;
+  padding: 50px 0px;
+}
+
+.what-we-do {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+}
+
+.what-we-do .what-we-do-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.what-we-do .what-we-do-container h5 {
+  padding-top: 10px;
+}
+
+.how-we-do {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+}
+
+.how-we-do .how-we-do-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.how-we-do .how-we-do-container h5 {
+  padding-top: 10px;
+}
 /*# sourceMappingURL=styles.css.map */
