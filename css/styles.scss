@@ -45,15 +45,27 @@ body{
 
 .nav-menu li {
     display: inline-block;
-}
-
-.nav-menu li a {
-    padding: 12px 10px;
+    a {
+        padding: 12px 10px;
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(26, 24, 24);
-    font-weight: 700;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    }
+    a.active,a:hover {
+        font-weight: 700;
+        color: rgb(39, 36, 104);
+    }
 }
+
+// .nav-menu li a {
+//     padding: 12px 10px;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     color: rgb(26, 24, 24);
+//     font-weight: 700;
+// }
 
 #header .searchbox {
     position: relative;

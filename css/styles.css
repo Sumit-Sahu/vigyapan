@@ -53,7 +53,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #1a1818;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
   font-weight: 700;
+  color: #272468;
 }
 
 #header .searchbox {
