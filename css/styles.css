@@ -465,7 +465,7 @@ body {
   margin: 0;
 }
 
-#about {
+.about-bg {
   background-image: url(../img/stickies-2852375_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -474,7 +474,7 @@ body {
   position: relative;
 }
 
-#about::before {
+.about-bg::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -517,6 +517,36 @@ body {
 
 .how-we-do .how-we-do-container h5 {
   padding-top: 10px;
+}
+
+.pricing {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+}
+
+.pricing .pricing-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.pricing .pricing-container p {
+  text-align: center;
+}
+
+.summary {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+}
+
+.summary .summary-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.summary .summary-container p {
+  text-align: center;
 }
 
 .career-bg {
