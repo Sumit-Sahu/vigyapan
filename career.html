@@ -91,11 +91,11 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Contact Number</label>
-                            <input type="phone" name="phone" id="phone" placeholder="contact number" class="resume-input">
+                            <input type="tel" name="phone" id="phone" placeholder="contact number" class="resume-input">
                         </div>
                         <div class="form-group">
                             <label for="resume">Upload Resume</label>
-                            <input type="file" name="resume" class="resume-file-input">
+                            <input type="file" name="resume" class="resume-file-input" id="resume-file-input">
                         </div> 
                         <input type="submit" value="submit" class="resume-submit">
                     </form>
@@ -151,9 +151,9 @@
                     <div class="footer-widget quick-links">
                         <h3 class="title">Support</h3>
                         <ul class="list-unstyled">
-                            <li><a href="contactus.html">Contact Us</a></li>
+                            <li><a href="./contactus.html">Contact Us</a></li>
                             <li><a href="./career.html">Careers With Us</a></li>
-                            <li><a href="#">List With Us</a></li>
+                            <li><a href="./list-with-us.html">List With Us</a></li>
                             <li><a href="#">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
@@ -229,6 +229,43 @@
             } else {
                 $('.searchbox-input').val('');
                 $('.searchbox-icon').css('display','block');
+            }
+        }
+
+        // to check if uploaded file is pdf,doc,docx by reading majic number from file
+        const fileSelector = document.getElementById("resume-file-input");
+        fileSelector.onchange = function(event) {
+            //const file = event.target.files[0];
+            //const filereader = new FileReader();
+            //filereader.onloadend = function(evt) {
+            //    if (evt.target.readyState === FileReader.DONE) {
+            //        const uint = new Uint8Array(evt.target.result)
+            //      let bytes = []
+            //    uint.forEach((byte) => {
+            //      bytes.push(byte.toString(16))
+            //        })
+            //        const hex = bytes.join('').toUpperCase();
+            //        switch (hex){
+            //            case '25504446':
+            //            break;
+            //             default:
+            //            alert("Only pdf are allowed.");
+            //            fileSelector.value = '';
+            //        }
+            //    }
+            //}
+            //const blob = file.slice(0, 4);
+            //filereader.readAsArrayBuffer(blob);
+
+            const ext = this.value.match(/\.([^.]+)$/)[1];
+            switch (ext) {
+               case 'pdf':
+               case 'doc':
+                case 'docx':
+                  break;
+                default:
+                   alert('Only pdf doc and docx files Allowed');
+                    this.value = '';
             }
         }
     </script>

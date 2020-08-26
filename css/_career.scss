@@ -45,11 +45,13 @@
         color: rgb(176, 250, 250);
     }
     .resume-submit {
+        overflow: hidden;
         float: right;
         color: white;
         font-size: 18px;
         font-family: 'Lato', sans-serif;
-        background: #4EC1E0;
+        // background: #4EC1E0;
+        background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
         border: none;
         outline: none;
         border-radius: 50px;
@@ -57,7 +59,7 @@
         cursor: pointer;
         margin-bottom: 20px;
         &:hover {
-            background:linear-gradient(to bottom, #4EC1E0 5%, #78ffff 100%);
+            background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 100%);
         }
     }
 }
