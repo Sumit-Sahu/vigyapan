@@ -148,7 +148,7 @@ body {
 }
 
 #introCarousel .search-section {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -201,6 +201,15 @@ body {
 
 #introCarousel .search-section .search-container button:focus {
   outline: none;
+}
+
+#introCarousel .search-section .search-container .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 4rem;
+}
+
+#introCarousel .search-section .search-container .select2-container .select2-selection--single {
+  height: 100%;
+  border: none;
 }
 
 /* brand section */
