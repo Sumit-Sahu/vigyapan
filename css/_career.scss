@@ -62,4 +62,16 @@
             background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 100%);
         }
     }
+    .error-message {
+        color: orange;
+    }
+     // to hide spin box
+     input[type="number"]::-webkit-outer-spin-button,
+     input[type="number"]::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+         margin: 0;
+     }
+     input[type="number"] {
+         -moz-appearance: textfield;
+     }
 }
