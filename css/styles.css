@@ -648,6 +648,22 @@ body {
   color: orange;
 }
 
+.career-form input:-webkit-autofill,
+.career-form input:-webkit-autofill:hover,
+.career-form input:-webkit-autofill:focus,
+.career-form textarea:-webkit-autofill,
+.career-form textarea:-webkit-autofill:hover,
+.career-form textarea:-webkit-autofill:focus,
+.career-form select:-webkit-autofill,
+.career-form select:-webkit-autofill:hover,
+.career-form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #b0fafa;
+  box-shadow: 0 0 0 0 transparent inset;
+  -webkit-box-shadow: 0 0 0 0 transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .career-form input[type="number"]::-webkit-outer-spin-button,
 .career-form input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
