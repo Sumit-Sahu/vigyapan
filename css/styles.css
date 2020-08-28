@@ -559,11 +559,10 @@ body {
 }
 
 .career-bg {
-  background-image: url(../img/career/resume.jpg);
-  background-size: cover;
+  background-image: url(../img/career/career-1.png);
+  background-size: 100% 40vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 450px;
+  min-height: 40vh;
   position: relative;
 }
 
@@ -585,19 +584,20 @@ body {
 }
 
 .career-form {
-  padding: 40px 0px;
+  min-height: 60vh;
+  padding: 15px 0px;
   color: white;
   background: #008edd;
 }
 
 .career-form .resume-form-title {
   text-align: center;
-  padding-bottom: 20px;
   font-family: cursive;
 }
 
 .career-form label {
   width: 100%;
+  margin: 0;
 }
 
 .career-form input.resume-input {
@@ -637,7 +637,6 @@ body {
   border-radius: 50px;
   padding: 10px 25px;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 .career-form .resume-submit:hover {
