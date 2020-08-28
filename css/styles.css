@@ -606,23 +606,23 @@ body {
   outline: none;
   border-bottom: 1px solid white;
   background: transparent;
-  color: #b0fafa;
+  color: #01FF70;
 }
 
 .career-form ::-webkit-input-placeholder {
-  color: #b0fafa;
+  color: #c9e2e2;
 }
 
 .career-form :-ms-input-placeholder {
-  color: #b0fafa;
+  color: #c9e2e2;
 }
 
 .career-form ::-ms-input-placeholder {
-  color: #b0fafa;
+  color: #c9e2e2;
 }
 
 .career-form ::placeholder {
-  color: #b0fafa;
+  color: #c9e2e2;
 }
 
 .career-form .resume-submit {
