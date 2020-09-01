@@ -3,3 +3,75 @@
     background: #03CEA4;
     min-height: 40vh;
 }
+
+.list-form {
+    min-height: 60vh;
+    padding: 15px 0px;
+    color: white;
+    background: #008edd;
+    .list-form-title {
+        text-align: center;
+        font-family: cursive;
+    }
+    label {
+        width: 100%;
+        margin: 0;
+    }
+    .list-input {
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        color: #01FF70;
+    }
+    ::placeholder {
+        color: rgb(201, 226, 226);
+    }
+    .list-form-submit {
+        overflow: hidden;
+        float: right;
+        color: white;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        // background: #4EC1E0;
+        background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        padding: 10px 25px;
+        cursor: pointer;
+        &:hover {
+            background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 100%);
+        }
+    }
+    .error-message {
+        color: orange;
+    }
+    // change autocomplete styles in webkit
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        // border: none;
+        // border-bottom: 1px solid white;
+        -webkit-text-fill-color: rgb(176, 250, 250);
+        box-shadow: 0 0 0 0 transparent inset;
+        -webkit-box-shadow: 0 0 0 0 transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
+}
+     // to hide spin box
+     input[type="number"]::-webkit-outer-spin-button,
+     input[type="number"]::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+         margin: 0;
+     }
+     input[type="number"] {
+         -moz-appearance: textfield;
+     }
+}

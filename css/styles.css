@@ -678,4 +678,94 @@ body {
   background: #03CEA4;
   min-height: 40vh;
 }
+
+.list-form {
+  min-height: 60vh;
+  padding: 15px 0px;
+  color: white;
+  background: #008edd;
+}
+
+.list-form .list-form-title {
+  text-align: center;
+  font-family: cursive;
+}
+
+.list-form label {
+  width: 100%;
+  margin: 0;
+}
+
+.list-form .list-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: #01FF70;
+}
+
+.list-form ::-webkit-input-placeholder {
+  color: #c9e2e2;
+}
+
+.list-form :-ms-input-placeholder {
+  color: #c9e2e2;
+}
+
+.list-form ::-ms-input-placeholder {
+  color: #c9e2e2;
+}
+
+.list-form ::placeholder {
+  color: #c9e2e2;
+}
+
+.list-form .list-form-submit {
+  overflow: hidden;
+  float: right;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.list-form .list-form-submit:hover {
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 100%);
+}
+
+.list-form .error-message {
+  color: orange;
+}
+
+.list-form input:-webkit-autofill,
+.list-form input:-webkit-autofill:hover,
+.list-form input:-webkit-autofill:focus,
+.list-form textarea:-webkit-autofill,
+.list-form textarea:-webkit-autofill:hover,
+.list-form textarea:-webkit-autofill:focus,
+.list-form select:-webkit-autofill,
+.list-form select:-webkit-autofill:hover,
+.list-form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #b0fafa;
+  box-shadow: 0 0 0 0 transparent inset;
+  -webkit-box-shadow: 0 0 0 0 transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.list-form input[type="number"]::-webkit-outer-spin-button,
+.list-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.list-form input[type="number"] {
+  -moz-appearance: textfield;
+}
 /*# sourceMappingURL=styles.css.map */
