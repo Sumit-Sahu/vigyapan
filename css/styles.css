@@ -723,7 +723,6 @@ body {
 
 .list-form .list-form-submit {
   overflow: hidden;
-  float: right;
   color: white;
   font-size: 18px;
   font-family: 'Lato', sans-serif;
@@ -740,7 +739,7 @@ body {
 }
 
 .list-form .error-message {
-  color: orange;
+  color: #E7FF47;
 }
 
 .list-form input:-webkit-autofill,
@@ -757,15 +756,5 @@ body {
   -webkit-box-shadow: 0 0 0 0 transparent inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-.list-form input[type="number"]::-webkit-outer-spin-button,
-.list-form input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.list-form input[type="number"] {
-  -moz-appearance: textfield;
 }
 /*# sourceMappingURL=styles.css.map */

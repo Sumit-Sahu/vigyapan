@@ -87,7 +87,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Company Name</label>  
-                                    <input type="text" onchange="return validateName();" placeholder="Your Company Name" id="company-name" class="list-input">
+                                    <input type="text" onchange="return validateCompanyName();" placeholder="Your Company Name" id="company-name" class="list-input">
                                     <span id="company-name-error" class="error-message"></span>
                                 </div>
                             </div>
@@ -108,14 +108,14 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="start-price">Price Range Start</label>
-                                    <input type="number" onchange="" name="start-price" id="start-price" placeholder="" class="list-input">
+                                    <input type="number" onchange="" name="start-price" id="start-price" placeholder="0" class="list-input">
                                     <span id="start-price-error" class="error-message"></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="end-price">Price Range End</label>
-                                    <input type="number" onchange=";" name="end-price" id="end-price" placeholder="" class="list-input">
+                                    <input type="number" onchange=";" name="end-price" id="end-price" placeholder="0" class="list-input">
                                     <span id="end-price-error" class="error-message"></span>
                                 </div>
                             </div>
@@ -147,7 +147,9 @@
                                     <span id="media-kit-error" class="error-message"></span>
                                 </div> 
                             </div>
-                            <input type="submit" value="submit" class="list-form-submit">
+                            <div class="col-12 d-flex justify-content-end">
+                                <input type="submit" value="submit" class="list-form-submit">
+                            </div>
                         </div>                    
                     </form>
                 </div>
@@ -318,11 +320,11 @@
 
         function validate() {
             var tag =true;
-            name = validateName();
-            email = validateEmail();
-            number = validateNumber();
-            file = validateResumeFile();
-            if (name && email && number && file){
+            //name = validateName();
+            //email = validateEmail();
+            //number = validateNumber();
+            file = validateMediaKit();
+            if (file){
                 return true;
             } else {
                 return false;
@@ -365,27 +367,77 @@
             }
         }
 
-        function validateResumeFile() {
-            document.getElementById("resume-file-error").innerHTML= "";
-            const resumeFile = document.getElementById("resume-file-input");
-            if (resumeFile.value ==="") {
-                document.getElementById("resume-file-error").innerHTML="upload a resume file in pdf,doc or docx";
-                resumeFile.value = '';
+        function validateMediaKit() {
+            document.getElementById("media-kit-error").innerHTML= "";
+            const file = document.getElementById("resume-file-input");
+            if (file.value ==="") {
+                document.getElementById("media-kit-error").innerHTML="upload media kit in png,pdf,doc or docx";
+                file.value = '';
                 return false;
             }
-            const ext = resumeFile.value.match(/\.([^.]+)$/)[1];
+            const ext = file.value.match(/\.([^.]+)$/)[1];
                 switch (ext) {
-                case 'pdf':
-                case 'doc':
-                case 'docx':
-                return true;
-                    break;
-                default:
-                    document.getElementById("resume-file-error").innerHTML="file should be pdf,doc or docx";
-                    resumeFile.value = '';
-                    return false;
+                    case '.png':
+                    case '.jpg':
+                    case 'pdf':
+                    case 'doc':
+                    case 'docx':
+                    return true;
+                        break;
+                    default:
+                        document.getElementById("media-kit-error").innerHTML="file should be png,pdf,doc or docx";
+                        file.value = '';
+                        return false;
                 }
         }
+
+        function validateCompanyName(){
+            document.getElementById("company-name-error").innerHTML="";
+            const name = document.getElementById("company-name").value.trim();
+            if (name === ""){
+                document.getElementById("company-name-error").innerHTML="company name required";
+                return false;
+            } else if (name.length <= 2) {
+                document.getElementById("company-name-error").innerHTML="minimum 2 character required";
+                return false;
+            } else return true;
+        }
+
+        function validPrice(value) {
+            pattern = /^\d/;
+            if(pattern.test(value))
+                return true;
+            else return false;
+        }
+        // event listner for price
+        document.getElementById("start-price").addEventListener("change", function(event){
+            value = document.getElementById("start-price").value;
+            document.getElementById("start-price-error").innerHTML="";
+            if(!validPrice(value)){
+                document.getElementById("start-price-error").innerHTML="invalid price";
+            }
+        });
+        document.getElementById("end-price").addEventListener("change", function(event){
+            value = document.getElementById("end-price").value;
+            document.getElementById("end-price-error").innerHTML="";
+            if(!validPrice(value)){
+                document.getElementById("end-price-error").innerHTML="invalid price";
+            }
+        });
+
+        // event listner for name (only alphabate to name input)
+        document.getElementById("name").addEventListener("keypress", function(event){
+            const value = String.fromCharCode(event.which);
+            const pattern = /[a-z\säö]/i;
+            if (!pattern.test(value)) event.preventDefault();
+        });
+
+        // event listner for number (only number to contact number input)
+        document.getElementById("contact-number").addEventListener("keypress", function(event){
+            const value = String.fromCharCode(event.which);
+            const pattern = /[\d]/i;
+            if (!pattern.test(value)) event.preventDefault();
+        });
 
     </script>
 </body>

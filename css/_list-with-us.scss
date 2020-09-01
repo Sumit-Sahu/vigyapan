@@ -30,7 +30,6 @@
     }
     .list-form-submit {
         overflow: hidden;
-        float: right;
         color: white;
         font-size: 18px;
         font-family: 'Lato', sans-serif;
@@ -46,7 +45,7 @@
         }
     }
     .error-message {
-        color: orange;
+        color: #E7FF47;
     }
     // change autocomplete styles in webkit
     input:-webkit-autofill,
@@ -66,12 +65,12 @@
         transition: background-color 5000s ease-in-out 0s;
 }
      // to hide spin box
-     input[type="number"]::-webkit-outer-spin-button,
-     input[type="number"]::-webkit-inner-spin-button {
-         -webkit-appearance: none;
-         margin: 0;
-     }
-     input[type="number"] {
-         -moz-appearance: textfield;
-     }
+    //  input[type="number"]::-webkit-outer-spin-button,
+    //  input[type="number"]::-webkit-inner-spin-button {
+    //      -webkit-appearance: none;
+    //      margin: 0;
+    //  }
+    //  input[type="number"] {
+    //      -moz-appearance: textfield;
+    //  }
 }
