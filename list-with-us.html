@@ -395,6 +395,7 @@
             const ext = file.value.match(/\.([^.]+)$/)[1];
                 switch (ext) {
                     case '.png':
+                    case '.jped':
                     case '.jpg':
                     case 'pdf':
                     case 'doc':
@@ -402,7 +403,7 @@
                     return true;
                         break;
                     default:
-                        document.getElementById("media-kit-error").innerHTML="file should be png,pdf,doc or docx";
+                        document.getElementById("media-kit-error").innerHTML="file should be png, pdf, jpeg, doc or docx";
                         file.value = '';
                         return false;
                 }
