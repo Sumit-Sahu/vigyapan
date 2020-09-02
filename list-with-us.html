@@ -123,14 +123,14 @@
                                 <div class="form-group">
                                     <label for="avail-date">Availability Start Date</label>
                                     <input type="datetime-local" onchange="" name="start-date" id="start-date" placeholder="" class="list-input">
-                                    <span id="availability-sdate-error" class="error-message"></span>
+                                    <span id="start-date-error" class="error-message"></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="avail-date">Availability End Date</label>
                                     <input type="datetime-local" onchange="" name="end-date" id="end-date" placeholder="" class="list-input">
-                                    <span id="availability-edate-error" class="error-message"></span>
+                                    <span id="end-date-error" class="error-message"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -315,16 +315,21 @@
         
     </script>
     <script type="text/javascript">
-        //validation
-        
 
+        //setting start date and end date default value to current date
+        document.getElementById('start-date').value = new Date().toISOString().slice(0, 16);
+        document.getElementById('end-date').value = new Date().toISOString().slice(0, 16);
+
+        //validation
         function validate() {
-            var tag =true;
-            //name = validateName();
-            //email = validateEmail();
-            //number = validateNumber();
-            file = validateMediaKit();
-            if (file){
+            validDate();
+            validPrice();
+            const name = validateName();
+            const companyName =validateCompanyName();
+            const email = validateEmail();
+            const number = validateNumber();
+            const file = validateMediaKit();
+            if (file && name && companyName && email &&number){
                 return true;
             } else {
                 return false;
@@ -339,6 +344,18 @@
                 return false;
             } else if (name.length <= 2) {
                 document.getElementById("name-error").innerHTML="minimum 3 character required";
+                return false;
+            } else return true;
+        }
+
+        function validateCompanyName(){
+            document.getElementById("company-name-error").innerHTML="";
+            const name = document.getElementById("company-name").value.trim();
+            if (name === ""){
+                document.getElementById("company-name-error").innerHTML="company name required";
+                return false;
+            } else if (name.length <= 2) {
+                document.getElementById("company-name-error").innerHTML="minimum 2 character required";
                 return false;
             } else return true;
         }
@@ -391,39 +408,36 @@
                 }
         }
 
-        function validateCompanyName(){
-            document.getElementById("company-name-error").innerHTML="";
-            const name = document.getElementById("company-name").value.trim();
-            if (name === ""){
-                document.getElementById("company-name-error").innerHTML="company name required";
-                return false;
-            } else if (name.length <= 2) {
-                document.getElementById("company-name-error").innerHTML="minimum 2 character required";
-                return false;
-            } else return true;
+        function validPrice() {
+            startPrice = document.getElementById("start-price");
+            endPrice = document.getElementById("end-price");
+            if (startPrice.value<0) startPrice.value=0;
+            if (endPrice.value<0) endPrice.value=0;
+            if (endPrice.value < startPrice.value) endPrice.value = startPrice.value;
+            return true;
         }
 
-        function validPrice(value) {
-            pattern = /^\d/;
-            if(pattern.test(value))
-                return true;
-            else return false;
+        function validDate(){
+            const startDate = document.getElementById("start-date");
+            const endDate = document.getElementById("end-date");
+            const sdate = new Date(startDate.value);
+            const edate = new Date(endDate.value);
+            var current = new Date(Date.now());
+            if (sdate < current){
+                current = current.toISOString();
+                current = current.slice(0,16);
+                startDate.value=current;
+            } 
+            if (edate < current){
+                current = current.toISOString();
+                current = current.slice(0,16);
+                endDate.value=current;
+            } 
+            
+            if(edate < sdate){
+                endDate.value = startDate.value;
+            }
         }
-        // event listner for price
-        document.getElementById("start-price").addEventListener("change", function(event){
-            value = document.getElementById("start-price").value;
-            document.getElementById("start-price-error").innerHTML="";
-            if(!validPrice(value)){
-                document.getElementById("start-price-error").innerHTML="invalid price";
-            }
-        });
-        document.getElementById("end-price").addEventListener("change", function(event){
-            value = document.getElementById("end-price").value;
-            document.getElementById("end-price-error").innerHTML="";
-            if(!validPrice(value)){
-                document.getElementById("end-price-error").innerHTML="invalid price";
-            }
-        });
 
         // event listner for name (only alphabate to name input)
         document.getElementById("name").addEventListener("keypress", function(event){
@@ -437,6 +451,22 @@
             const value = String.fromCharCode(event.which);
             const pattern = /[\d]/i;
             if (!pattern.test(value)) event.preventDefault();
+        });
+
+        // event listner for price
+        document.getElementById("start-price").addEventListener("change", function(event){
+            validPrice();
+        });
+        document.getElementById("end-price").addEventListener("change", function(event){
+            validPrice();
+        });
+
+        // event listner for date
+        document.getElementById("start-date").addEventListener("change", function(event){
+            validDate();
+        });
+        document.getElementById("end-date").addEventListener("change", function(event){
+            validDate();
         });
 
     </script>
