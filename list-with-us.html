@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
+    <title>Vigayapan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/283773f301.js" crossorigin="anonymous"></script>    
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row align-items-center no-gutters">
+                <div class=" col-md-2 d-flex justify-content-center">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-md-5 d-flex justify-content-center align-items-center">
+                    <nav id="nav-container">
+                        <ul class="nav-menu">
+                            <li class=""><a href="./index.html">Home</a></li>
+                            <li class=""><a href="./about.html">About</a></li>
+                            <li class=""><a href="#">Services</a></li>
+                            <li class=""><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class=" col-md-3">
+                    <form class="searchbox" action="" role="search">
+                        <input class="searchbox-input" type="text" placeholder="search..." onkeyup="buttonUp();">
+                        <input type="submit" class="searchbox-submit"><span class="searchbox-icon"><i class="fa fa-search"></i></span>
+                    </form>
+                </div>
+                <div class=" col-md-2 d-flex justify-content-center">
+                    <div class="login-link">
+                        <a id="loginformlink">
+                            <span class="fa fa-sign-in "></span>Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--===== end header =====-->
+
+    <!-- list with us  -->
+    <section id="list-with-us">
+        <div class="list-with-us-bg">
+            <div class="list-us-title">
+                <h1><span style="color: rgb(236, 70, 10);">List</span> With Us</h1>
+            </div>
+        </div>
+        <div class="container-fluid list-form">
+            <div class="row justify-content-center" >
+                <div class="col-md-6">
+                    <div class="list-form-title">
+                        <h1>List With Us</h1>
+                    </div>
+                    <form action="" name="list-form" id="list-form" onsubmit="return validate();">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Name</label>  
+                                    <input type="text" onchange="return validateName();" placeholder="Name" id="name" class="list-input">
+                                    <span id="name-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Company Name</label>  
+                                    <input type="text" onchange="return validateCompanyName();" placeholder="Your Company Name" id="company-name" class="list-input">
+                                    <span id="company-name-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email-Id</label>
+                                    <input type="email" onchange="return validateEmail();" name="email" id="email" placeholder="e.g. your@gmail.com" class="list-input" >
+                                    <span id="email-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone">Mobile Number</label>
+                                    <input type="tel" onchange="return validateNumber();" name="phone" id="contact-number" placeholder="contact number" class="list-input">
+                                    <span id="number-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="start-price">Price Range Start</label>
+                                    <input type="number" onchange="" name="start-price" id="start-price" placeholder="0" class="list-input">
+                                    <span id="start-price-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="end-price">Price Range End</label>
+                                    <input type="number" onchange=";" name="end-price" id="end-price" placeholder="0" class="list-input">
+                                    <span id="end-price-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="avail-date">Availability Start Date</label>
+                                    <input type="datetime-local" onchange="" name="start-date" id="start-date" placeholder="" class="list-input">
+                                    <span id="start-date-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="avail-date">Availability End Date</label>
+                                    <input type="datetime-local" onchange="" name="end-date" id="end-date" placeholder="" class="list-input">
+                                    <span id="end-date-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="details">Details</label>
+                                    <textarea type="text" onchange="" name="phone" id="details" placeholder="" class="list-input"></textarea>
+                                    <span id="details-error" class="error-message"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="media-kit">Media-Kit</label>
+                                    <input type="file" onchange="" name="media-kit" class="list-input" id="resume-file-input" accept=".jpg,.png,.jpeg,.pdf,.doc,.docx" multiple>
+                                    <span id="media-kit-error" class="error-message"></span>
+                                </div> 
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <input type="submit" value="submit" class="list-form-submit">
+                            </div>
+                        </div>                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== end list with us =====-->
+
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget about-widget">
+                        <h3 class="title">Contact Info</h3>
+                        <ul class="list-unstyled footer-contact">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>01 ,address district pincode</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>+91 8574849385</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>info@bookvigyapan.com</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-social list-unstyled">
+                            <li><a  href="#"><span class=" fa fa-facebook fa-fw"></span></a></li>
+                            <li><a  href="#"><span class=" fa fa-twitter fa-fw"></span></a></li>
+                            <li><a  href="https://www.linkedin.com/company/bookvigyapan"><span class=" fa fa-linkedin fa-fw"></span></a></li>
+                            <li><a  href="#"><span class=" fa fa-blog fa-fw"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget quick-links">
+                        <h3 class="title">About Us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="#">Become Agency Partner</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget quick-links">
+                        <h3 class="title">Support</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="./contactus.html">Contact Us</a></li>
+                            <li><a href="./career.html">Careers With Us</a></li>
+                            <li><a href="./list-with-us.html">List With Us</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--===== end footer section =====-->
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+     <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- slick (used for carousel) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+         $(document).ready(function() {
+            //for search bar on header
+            var submitIcon = $('.searchbox-icon');
+            var inputBox = $('.searchbox-input');
+            var searchBox = $('.searchbox');
+            var isOpen = false;
+            submitIcon.click(function(){
+                if(isOpen == false){
+                    inputBox.addClass('searchbox-input-open');
+                    inputBox.focus();
+                    isOpen = true;
+                } else {
+                    inputBox.removeClass('searchbox-input-open');
+                    inputBox.focusout();
+                    isOpen = false;
+                }
+            });
+            submitIcon.mouseup(function(){
+                return false;
+            });
+            searchBox.mouseup(function(){
+                return false;
+            });
+            $(document).mouseup(function(){
+                if(isOpen == true){
+                    $('.searchbox-icon').css('display','block');
+                    submitIcon.click();
+                }
+            });  
+
+            //header scroll//
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                  $('#header').addClass('header-scrolled');
+                } else {
+                  $('#header').removeClass('header-scrolled');
+                }
+              });
+
+         });
+
+         
+        
+        
+        function buttonUp(){
+            var inputVal = $('.searchbox-input').val();
+            inputVal = $.trim(inputVal).length;
+            if( inputVal !== 0){
+                $('.searchbox-icon').css('display','none');
+            } else {
+                $('.searchbox-input').val('');
+                $('.searchbox-icon').css('display','block');
+            }
+        }
+
+        // to check if uploaded file is pdf,doc,docx
+        //const fileSelector = document.getElementById("resume-file-input");
+        //fileSelector.onchange = function(event) {
+            //const file = event.target.files[0];
+            //const filereader = new FileReader();
+            //filereader.onloadend = function(evt) {
+            //    if (evt.target.readyState === FileReader.DONE) {
+            //        const uint = new Uint8Array(evt.target.result)
+            //      let bytes = []
+            //    uint.forEach((byte) => {
+            //      bytes.push(byte.toString(16))
+            //        })
+            //        const hex = bytes.join('').toUpperCase();
+            //        switch (hex){
+            //            case '25504446':
+            //            break;
+            //             default:
+            //            alert("Only pdf are allowed.");
+            //            fileSelector.value = '';
+            //        }
+            //    }
+            //}
+            //const blob = file.slice(0, 4);
+            //filereader.readAsArrayBuffer(blob);
+            //}
+        //}
+
+        
+    </script>
+    <script type="text/javascript">
+
+        //setting start date and end date default value to current date
+        document.getElementById('start-date').value = new Date().toISOString().slice(0, 16);
+        document.getElementById('end-date').value = new Date().toISOString().slice(0, 16);
+
+        //validation
+        function validate() {
+            validDate();
+            validPrice();
+            const name = validateName();
+            const companyName =validateCompanyName();
+            const email = validateEmail();
+            const number = validateNumber();
+            const file = validateMediaKit();
+            if (file && name && companyName && email &&number){
+                return true;
+            } else {
+                return false;
+            } 
+        }
+        //validate for name
+        function validateName() {
+            document.getElementById("name-error").innerHTML="";
+            const name = document.getElementById("name").value.trim();
+            if (name === ""){
+                document.getElementById("name-error").innerHTML="name required";
+                return false;
+            } else if (name.length <= 2) {
+                document.getElementById("name-error").innerHTML="minimum 3 character required";
+                return false;
+            } else return true;
+        }
+
+        function validateCompanyName(){
+            document.getElementById("company-name-error").innerHTML="";
+            const name = document.getElementById("company-name").value.trim();
+            if (name === ""){
+                document.getElementById("company-name-error").innerHTML="company name required";
+                return false;
+            } else if (name.length <= 2) {
+                document.getElementById("company-name-error").innerHTML="minimum 2 character required";
+                return false;
+            } else return true;
+        }
+
+        function validateEmail() {
+            document.getElementById("email-error").innerHTML="";
+            const email = document.getElementById("email");
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(email.value.match(mailformat)) {
+                return true;
+            } else {
+                document.getElementById("email-error").innerHTML="invalid email address";
+                return false;
+            }
+        }
+
+        function validateNumber() {
+            document.getElementById("number-error").innerHTML="";
+            const number = document.getElementById("contact-number");
+            var phoneno = /^\d{10}$/;
+            if((number.value.match(phoneno))) {
+                return true;
+            } else {
+                document.getElementById("number-error").innerHTML="enter phone number in [xxxxxxxxxx] format";
+                return false;
+            }
+        }
+
+        function validateMediaKit() {
+            document.getElementById("media-kit-error").innerHTML= "";
+            const file = document.getElementById("resume-file-input");
+            if (file.value ==="") {
+                document.getElementById("media-kit-error").innerHTML="file should be png, pdf, jpeg, doc or docx";
+                file.value = '';
+                return false;
+            }
+            const ext = file.value.match(/\.([^.]+)$/)[1];
+                switch (ext) {
+                    case 'png':
+                    case 'jpeg':
+                    case 'jpg':
+                    case 'pdf':
+                    case 'doc':
+                    case 'docx':
+                    return true;
+                        break;
+                    default:
+                        document.getElementById("media-kit-error").innerHTML="file should be png, pdf, jpeg, doc or docx";
+                        file.value = '';
+                        return false;
+                }
+        }
+
+        function validPrice() {
+            startPrice = document.getElementById("start-price");
+            endPrice = document.getElementById("end-price");
+            if (startPrice.value<0) startPrice.value=0;
+            if (endPrice.value<0) endPrice.value=0;
+            if (endPrice.value < startPrice.value) endPrice.value = startPrice.value;
+            return true;
+        }
+
+        function validDate(){
+            const startDate = document.getElementById("start-date");
+            const endDate = document.getElementById("end-date");
+            const sdate = new Date(startDate.value);
+            const edate = new Date(endDate.value);
+            var current = new Date(Date.now());
+            if (sdate < current){
+                current = current.toISOString();
+                current = current.slice(0,16);
+                startDate.value=current;
+            } 
+            if (edate < current){
+                current = current.toISOString();
+                current = current.slice(0,16);
+                endDate.value=current;
+            } 
+            
+            if(edate < sdate){
+                endDate.value = startDate.value;
+            }
+        }
+
+        // event listner for name (only alphabate to name input)
+        document.getElementById("name").addEventListener("keypress", function(event){
+            const value = String.fromCharCode(event.which);
+            const pattern = /[a-z\säö]/i;
+            if (!pattern.test(value)) event.preventDefault();
+        });
+
+        // event listner for number (only number to contact number input)
+        document.getElementById("contact-number").addEventListener("keypress", function(event){
+            const value = String.fromCharCode(event.which);
+            const pattern = /[\d]/i;
+            if (!pattern.test(value)) event.preventDefault();
+        });
+
+        // event listner for price
+        document.getElementById("start-price").addEventListener("change", function(event){
+            validPrice();
+        });
+        document.getElementById("end-price").addEventListener("change", function(event){
+            validPrice();
+        });
+
+        // event listner for date
+        document.getElementById("start-date").addEventListener("change", function(event){
+            validDate();
+        });
+        document.getElementById("end-date").addEventListener("change", function(event){
+            validDate();
+        });
+
+    </script>
+</body>
+</html>

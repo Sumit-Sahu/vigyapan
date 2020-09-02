@@ -1,12 +1,23 @@
-.career-bg {
-    background-image: url("../img/career/career-1.png");
-    background-size: 100% 40vh;
+.list-with-us-bg {
+    background-image: url("../img/list-bg.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 40vh;
     position: relative;
-    .career-title {
+    &::before {
+        content: "";
         position: absolute;
-        top: 50%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .list-us-title {
+        position: absolute;
+        bottom: 0;
         left: 0;
         transform: translate(0,-50%);
         padding-left: 150px;
@@ -19,13 +30,15 @@
         }
         
     }
+    
 }
-.career-form {
+
+.list-form {
     min-height: 60vh;
     padding: 15px 0px;
     color: white;
     background: #008edd;
-    .resume-form-title {
+    .list-form-title {
         text-align: center;
         font-family: cursive;
     }
@@ -33,7 +46,7 @@
         width: 100%;
         margin: 0;
     }
-    input.resume-input {
+    .list-input {
         width: 100%;
         border: none;
         outline: none;
@@ -44,9 +57,8 @@
     ::placeholder {
         color: rgb(201, 226, 226);
     }
-    .resume-submit {
+    .list-form-submit {
         overflow: hidden;
-        float: right;
         color: white;
         font-size: 18px;
         font-family: 'Lato', sans-serif;
@@ -62,7 +74,7 @@
         }
     }
     .error-message {
-        color: orange;
+        color: #E7FF47;
     }
     // change autocomplete styles in webkit
     input:-webkit-autofill,
@@ -82,12 +94,12 @@
         transition: background-color 5000s ease-in-out 0s;
 }
      // to hide spin box
-     input[type="number"]::-webkit-outer-spin-button,
-     input[type="number"]::-webkit-inner-spin-button {
-         -webkit-appearance: none;
-         margin: 0;
-     }
-     input[type="number"] {
-         -moz-appearance: textfield;
-     }
+    //  input[type="number"]::-webkit-outer-spin-button,
+    //  input[type="number"]::-webkit-inner-spin-button {
+    //      -webkit-appearance: none;
+    //      margin: 0;
+    //  }
+    //  input[type="number"] {
+    //      -moz-appearance: textfield;
+    //  }
 }
