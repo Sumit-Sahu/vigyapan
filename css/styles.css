@@ -559,7 +559,7 @@ body {
 }
 
 .career-bg {
-  background-image: url(../img/career/career-1.png);
+  background-image: url("../img/career/career-1.png");
   background-size: 100% 40vh;
   background-repeat: no-repeat;
   min-height: 40vh;
@@ -674,9 +674,40 @@ body {
 }
 
 .list-with-us-bg {
-  background-size: 100%,40vh;
-  background: #03CEA4;
+  background-image: url("../img/list-bg.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   min-height: 40vh;
+  position: relative;
+}
+
+.list-with-us-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.list-with-us-bg .list-us-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding-left: 150px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.list-with-us-bg .list-us-title h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .list-form {
