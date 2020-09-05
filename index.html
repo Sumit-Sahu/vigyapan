@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="./img/logo.png"/>
     <title>Vigayapan</title>
+
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <!--Import Google Icon Font-->
+    <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+    <!-- Materialize (Compiled and minified CSS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- font awesome -->
     <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="https://kit.fontawesome.com/283773f301.js" crossorigin="anonymous"></script>    
     
     <!-- custom css -->
@@ -23,8 +30,31 @@
 
 </head>
 <body>
+    <!-- navbar section -->
+    <nav class="navbar">
+        <div class="nav-wrapper ">
+            <div class="container container-s">
+                <a class="brand-logo" href="#">BookVigyapan</a>
+                <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""></span>
+                </button> -->
+                <div class="right hide-on-med-and-down" id="navbarSupportedContent">
+                    <ul class="">
+                    <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ContactUs">Contact Us</a></li>
+                    <li><a class="btn-nav btn" href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
     <!-- header -->
-    <header id="header">
+    <!-- <header id="header">
         <div class="container-fluid">
             <div class="row align-items-center no-gutters">
                 <div class=" col-md-2 d-flex justify-content-center">
@@ -59,11 +89,11 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
     <!--===== end header =====-->
 
     <!-- start intro section -->
-    <section class="" id="intro">
+    <!-- <section class="" id="intro">
         <div class="intro-container">
             <div class="carousel" id="introCarousel" data-ride="carousel">
                 <div class="search-section">
@@ -136,12 +166,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- end intro section -->
 
     <!-- brand section -->
 
-    <section id="brand-section">
+    <!-- <section id="brand-section">
         <div class="container brand-container">
             <div class="section-title">
                 <h2>Our Partners</h2>
@@ -180,10 +210,10 @@
             </div> 
 
         </div>
-    </section>
+    </section> -->
     <!--===== end brand section =====-->
     <!-- start testimonials section -->
-    <div class="bg_content">
+    <!-- <div class="bg_content">
         <div class="container testimonials">
             <div class="section-title">
                 <h2>Testimonials</h2>
@@ -225,12 +255,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--===== end testimonials section =====-->
 
 
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -283,18 +313,17 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!--===== end footer section =====-->
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-     <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
+    <!-- Materialize (Compiled and minified JavaScript) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- slick (used for carousel) -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

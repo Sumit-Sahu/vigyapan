@@ -1,14 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 body {
   background: #fff;
-  color: #666666;
+  color: #212529;
   /* font-family: ; */
   width: 100%;
-  /* padding-top: 70px; */
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+}
+
+/* -----helper classes----- */
+.container-s {
+  max-width: 920px;
+  margin: 0 auto !important;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+
+/* -----navbar styling----- */
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EFEFF1;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.navbar .brand-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #333347;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.navbar .nav-item {
+  text-transform: capitalize;
+}
+
+.navbar .nav-item .nav-link {
+  color: #333347;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar .nav-item .nav-link:hover {
+  background-color: #FFFFFF;
+  color: #23D3D3;
+}
+
+.btn-nav {
+  color: #FFFFFF;
+  background: #047aed;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.btn-nav:hover {
+  background-color: #047aed;
+  color: #FFFFFF;
 }
 
 /* header */
