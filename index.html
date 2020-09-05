@@ -17,6 +17,9 @@
 
     <!-- Materialize (Compiled and minified CSS) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- animate.css (for using animations) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -31,27 +34,85 @@
 </head>
 <body>
     <!-- navbar section -->
-    <nav class="navbar">
-        <div class="nav-wrapper ">
-            <div class="container container-s">
-                <a class="brand-logo" href="#">BookVigyapan</a>
-                <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=""></span>
-                </button> -->
-                <div class="right hide-on-med-and-down" id="navbarSupportedContent">
-                    <ul class="">
-                    <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ContactUs">Contact Us</a></li>
-                    <li><a class="btn-nav btn" href="#">Sign Up</a></li>
-                    </ul>
+    <div class="navbar-fixed">
+        <nav class="navbar">
+            <div class="nav-wrapper ">
+                <div class="container container-s">
+                    <a class="brand-logo" href="#">BookVigyapan</a>
+                    <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""></span>
+                    </button> -->
+                    <div class="right hide-on-med-and-down" id="navbarSupportedContent">
+                        <ul class="">
+                        <li class="nav-item"><a class="nav-link dropdown-trigger" href="#!" data-target="media-dropdown">Media</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ContactUs">Contact Us</a></li>
+                        <li><a class="btn-nav btn" href="#">Sign Up</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+    <!-- media dropdown content -->
+    <ul id="media-dropdown" class="dropdown-content">
+        <li><a href="#!">Traditional OOH </a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Digital</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Mall Branding</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Airport</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Multiplex</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Office</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Transit</a></li>
+        <li class="divider"></li>
+      </ul>
+
     <!-- navbar end -->
+    <section class="section home">
+        <!-- hero section -->
+        <div class="container">
+            <div class="row center-align">
+                <div class="col m12">
+                    <div class="hero-content wow fadeIn">
+                        <h1>India’s First Analytics Driven Advertisement Solution</h1>
+                        <p>All advertisements made easy</p>
+                        <form action="">
+                            <div class="input-field col s6">
+                                <input type="text" id="location-input" class="location-input">
+                                <label for="location-input">Location</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" id="media-input" class="media-input">
+                                <label for="media-input">Media</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-note">
+                        <p>Get your ads published today</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col m12">
+                <div class="client-list wow fadeIn">
+                  <ul>
+                    <li><img class="" src="" alt=""> </li>
+                    <li><img class="" src="" alt=""> </li>
+                    <li><img class="" src="" alt=""> </li>
+                    <li><img class="" src="" alt=""> </li>
+                    <li><img class="" src="" alt=""> </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <!-- hero end -->
+    </section>
 
     <!-- header -->
     <!-- <header id="header">
@@ -325,6 +386,9 @@
     <!-- Materialize (Compiled and minified JavaScript) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <!-- link to wow.js (used for animation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <!-- slick (used for carousel) -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -412,12 +476,66 @@
                 $('.searchbox-icon').css('display','block');
             }
         }
-        //function filterFunction() {
-        //    console.log(document);
-        //    const input = document.getElementById("select-city");
-        //    const filter = input.value.toUpperCase();
-        //    console.log("hello" );
-        //}
+
+
+        //activate wow.js
+        new WOW().init();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Autocomplete for location and media input(to add autocomplete dropdown below input to suggest possible values)
+            var elems = document.querySelectorAll('.location-input');
+            var instances = M.Autocomplete.init(elems, {
+              data: {
+                "Apple": null,
+                "Microsoft": null,
+                "Google": null
+              },
+              minLength: 0, 
+            });
+            console.log(elems);
+            console.log(instances[0].count);
+            
+            $('#location-input').on('keyup',function(){
+            console.log('keyup')
+            if ( instances[0].count === 0 ) {
+                console.log('no matches');
+                $('#location-input').val('');
+            }
+            })
+
+            var elems1 = document.querySelectorAll('.media-input');
+            var instances1 = M.Autocomplete.init(elems1, {
+              data: {
+                "Apple": null,
+                "Microsoft": null,
+                "Google": null
+              },
+              minLength: 0, 
+            });
+            console.log(elems1);
+            console.log(instances1[0].count);
+            
+            $('#media-input').on('keyup',function(){
+            console.log('keyup')
+            if ( instances[0].count === 0 ) {
+                console.log('no matches');
+                $('#media-input').val('');
+            }
+            })
+
+            // dropdown on header
+            var elems2 = document.querySelectorAll('.dropdown-trigger');
+            var instances2 = M.Dropdown.init(elems2,{
+                inDuration: 300,
+                outDuration: 225,
+                constrainWidth: false, 
+                belowOrigin: false,
+                coverTrigger:false,
+                alignment: 'left',
+                hover: true
+            });
+            
+          });
     </script>
 </body>
 </html>

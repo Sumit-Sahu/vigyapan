@@ -2,13 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
   background: #fff;
   color: #212529;
-  /* font-family: ; */
   width: 100%;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+}
+
+/* --- Common Styles ---*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 /* -----helper classes----- */
@@ -66,6 +76,45 @@ body {
 .btn-nav:hover {
   background-color: #047aed;
   color: #FFFFFF;
+}
+
+/* -----Hero Section Styling----- */
+.home {
+  background-color: #F7F7F8;
+}
+
+.home .hero-content {
+  padding: 0px;
+}
+
+@media only screen and (min-width: 640px) {
+  .home .hero-content {
+    padding: 25px 0 0 0;
+  }
+}
+
+.home h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #252525;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.home p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #818198;
+  max-width: 630px;
+  margin: 0 auto;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form-note p {
+  font-size: 12px;
 }
 
 /* header */
