@@ -45,10 +45,10 @@
                     <div class="right hide-on-med-and-down" id="navbarSupportedContent">
                         <ul class="">
                         <li class="nav-item"><a class="nav-link dropdown-trigger" href="#!" data-target="media-dropdown">Media</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#ContactUs">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aboutUs">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ContactUs">Contact Us</a></li>
                         <li><a class="btn-nav btn" href="#">Sign Up</a></li>
                         </ul>
                     </div>
@@ -75,6 +75,7 @@
       </ul>
 
     <!-- navbar end -->
+    <!-- home section -->
     <section class="section home">
         <!-- hero section -->
         <div class="container">
@@ -122,6 +123,22 @@
         </div>
         <!-- hero end -->
     </section>
+    <!-- home end -->
+    <!-- feature section -->
+    <section class="section features" id="features">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vitae, inventore sed consequatur porro sit nihil quas. Consequatur quo fugiat eligendi, accusantium aliquid assumenda iste amet. Doloribus earum consectetur asperiores.
+    </section>
+    <!-- feature end -->
+    <!-- pricing start -->
+    <section class="section pricing" id="pricing">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur provident exercitationem ex maiores labore a vel ab eius odio blanditiis perspiciatis aut, illum accusantium tenetur asperiores omnis architecto cupiditate?
+    </section>
+    <!-- pricing end -->
+    <!-- about us section -->
+    <section class="section about-us" id="aboutUs">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo sapiente fuga eaque eius ad dolorum suscipit nihil. Doloribus et velit quia ipsam odit, earum debitis fugit laboriosam, tempore distinctio ipsa.
+    </section>
+    <!-- about us end -->
 
     <!-- header -->
     <!-- <header id="header">
@@ -388,9 +405,10 @@
     <!--===== end footer section =====-->
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
 
     <!-- Materialize (Compiled and minified JavaScript) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -432,6 +450,10 @@
                   }],
                 
             });
+            
+
+
+
             //for search bar on header
             var submitIcon = $('.searchbox-icon');
             var inputBox = $('.searchbox-input');
@@ -469,6 +491,22 @@
                   $('#header').removeClass('header-scrolled');
                 }
               });
+
+            /* ------ jQuery for Easing min -- */
+
+            // Smooth scrolling using jQuery easing
+            $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                    scrollTop: (target.offset().top - 54)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+                }
+            });
 
          });
 
