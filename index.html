@@ -85,8 +85,11 @@
                         <p>All advertisements made easy</p>
                         <form class="cate-search-form" action="">
                             <div class="input-field">
-                                <!-- <i class="fa fa-crosshairs material-icons prefix"></i> -->
+                                
                                 <input type="text" id="location-input" class="location-input" placeholder="Location">
+                                <span class="near_b">
+                                    <i class="fa fa-crosshairs"></i>
+                                </span>
                                 
                                 <!-- <label for="location-input">Location</label> -->
                             </div>
@@ -105,13 +108,14 @@
                 </div>
             </div>
             <div class="col m12">
-                <div class="client-list wow fadeIn">
+                <div class="hero-list wow fadeIn">
                   <ul>
-                    <li><img class="" src="" alt=""> </li>
-                    <li><img class="" src="" alt=""> </li>
-                    <li><img class="" src="" alt=""> </li>
-                    <li><img class="" src="" alt=""> </li>
-                    <li><img class="" src="" alt=""> </li>
+                    <li><img class="" src="./img/heroimages/billboard.png" alt=""> </li>
+                    <li><img class="" src="./img/heroimages/newspaper.png" alt=""> </li>
+                    <li><img class="" src="./img/heroimages/radio.png" alt=""> </li>
+                    <li><img class="" src="./img/heroimages/truck.png" alt=""> </li>
+                    <li><img class="" src="./img/heroimages/tv-monitor.png" alt=""> </li>
+                    <li><img class="" src="./img/heroimages/vibration-symbol.png" alt=""> </li>
                   </ul>
                 </div>
               </div>
@@ -491,10 +495,36 @@
             var elems = document.querySelectorAll('.location-input');
             var instances = M.Autocomplete.init(elems, {
               data: {
-                "Apple": null,
-                "Microsoft": null,
-                "Google": null
-              },
+                "Agartala":null,
+                "Ahmedabad": null,
+                "Amaravati": null,
+                "Bangalore": null,
+                "Bhopal": null,                                      
+                "Bhubaneswar": null,
+                "Chandigarh": null,
+                "Chennai": null,                                       
+                "Dehradun": null,                                        
+                "Delhi": null,                                     
+                "Dispur": null,                                      
+                "Gandhinagar": null,
+                "Guwahati": null,                                        
+                "Hyderabad": null,
+                "Imphal": null,                                      
+                "Itanagar": null,                                        
+                "Kohima": null,                                      
+                "Kolkata": null,                                       
+                "Lucknow": null,                                       
+                "Mumbai": null,                                      
+                "New Delhi": null,
+                "Panji": null,                                     
+                "Patna": null,                                     
+                "Pune": null,                                    
+                "Raipur": null,                                      
+                "Ranchi": null,                                      
+                "Shilong": null,                                       
+                "Shimla": null,                                      
+                "Srinagar": null             
+            },
               minLength: 0, 
             });
             console.log(elems);
@@ -511,9 +541,14 @@
             var elems1 = document.querySelectorAll('.media-input');
             var instances1 = M.Autocomplete.init(elems1, {
               data: {
-                "Apple": null,
-                "Microsoft": null,
-                "Google": null
+                "Airport": null,
+                "Digital": null,
+                "Outdoor": null,
+                "Cinema": null,                
+                "Office Space": null,
+                "Mall Branding": null,
+                "Transit Media": null,
+                "Non Traditional": null
               },
               minLength: 0, 
             });
