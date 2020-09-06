@@ -84,6 +84,7 @@ p {
 }
 
 .home .hero-content {
+  position: relative;
   padding: 0px;
 }
 
@@ -111,6 +112,46 @@ p {
   line-height: 1.6em;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+.cate-search-form {
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 10px 10px;
+  border: 1px solid #dfdfdf;
+  -webkit-box-shadow: 0 4px 22px -10px rgba(0, 0, 0, 0.42);
+          box-shadow: 0 4px 22px -10px rgba(0, 0, 0, 0.42);
+}
+
+.cate-search-form div {
+  float: left;
+  padding: 0px 5px;
+}
+
+.cate-search-form div:nth-child(1) {
+  width: 45%;
+}
+
+.cate-search-form div:nth-child(2) {
+  width: 45%;
+}
+
+.cate-search-form div:nth-child(3) {
+  width: 10%;
+}
+
+.cate-search-form .input-field input[type=text] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #047aed;
+  background: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  margin: 0px;
+  padding-left: 50px;
 }
 
 .form-note p {
