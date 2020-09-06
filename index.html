@@ -140,122 +140,6 @@
     </section>
     <!-- about us end -->
 
-    <!-- header -->
-    <!-- <header id="header">
-        <div class="container-fluid">
-            <div class="row align-items-center no-gutters">
-                <div class=" col-md-2 d-flex justify-content-center">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="./img/logo.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-                <div class=" col-md-5 d-flex justify-content-center align-items-center">
-                    <nav id="nav-container">
-                        <ul class="nav-menu">
-                            <li class=""><a href="#" class="active">Home</a></li>
-                            <li class=""><a href="./about.html">About</a></li>
-                            <li class=""><a href="#">Services</a></li>
-                            <li class=""><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class=" col-md-3">
-                    <form class="searchbox" action="" role="search">
-                        <input class="searchbox-input" type="text" placeholder="search..." onkeyup="buttonUp();">
-                        <input type="submit" class="searchbox-submit"><span class="searchbox-icon"><i class="fa fa-search"></i></span>
-                    </form>
-                </div>
-                <div class=" col-md-2 d-flex justify-content-center">
-                    <div class="login-link">
-                        <a id="loginformlink">
-                            <span class="fa fa-sign-in "></span>Login
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <!--===== end header =====-->
-
-    <!-- start intro section -->
-    <!-- <section class="" id="intro">
-        <div class="intro-container">
-            <div class="carousel" id="introCarousel" data-ride="carousel">
-                <div class="search-section">
-                    <div class="container search-container">
-                        <form action="">
-                            <div class="d-flex justify-content-center">
-                                <div class="col-sm-6 d-flex align-items-center">
-                                    <i class="fa fa-city"></i>
-                                    <select class="select-srch" name="state" id="select-city" onKeyUp="filterFunction();">
-                                        <option value="">Select City</option>
-                                        <option value="Agartala">Agartala</option>
-                                        <option value="Ahmedabad">Ahmedabad</option>
-                                        <option value="Amaravati">Amaravati</option>
-                                        <option value="Bangalore">Bangalore</option>
-                                        <option value="Bhopal">Bhopal</option>
-                                        <option value="Bhubaneswar">Bhubaneswar</option>
-                                        <option value="Chandigarh">Chandigarh</option>
-                                        <option value="Chennai">Chennai</option>
-                                        <option value="Dehradun">Dehradun</option>
-                                        <option value="Delhi">Delhi</option>
-                                        <option value="Dispur">Dispur</option>
-                                        <option value="Gandhinagar">Gandhinagar</option>
-                                        <option value="Guwahati">Guwahati</option>
-                                        <option value="Hyderabad">Hyderabad</option>
-                                        <option value="Imphal">Imphal</option>
-                                        <option value="Itanagar">Itanagar</option>
-                                        <option value="Kohima">Kohima</option>
-                                        <option value="Kolkata">Kolkata</option>
-                                        <option value="Lucknow">Lucknow</option>
-                                        <option value="Mumbai">Mumbai</option>
-                                        <option value="New Delhi">New Delhi</option>
-                                        <option value="Panji">Panji</option>
-                                        <option value="Patna">Patna</option>
-                                        <option value="Pune">Pune</option>
-                                        <option value="Raipur">Raipur</option>
-                                        <option value="Ranchi">Ranchi</option>
-                                        <option value="Shilong">Shilong</option>
-                                        <option value="Shimla">Shimla</option>
-                                        <option value="Srinagar">Srinagar</option>
-                                    </select>
-                                </div>
-                                <div class="borderRight"></div>
-                                <div class="col-sm-6 d-flex align-items-center pr-0">
-                                    <i class="fa fa-list "></i>
-                                    <select class="select-srch" name="" id="">
-                                        <option value="">Select Category</option>
-                                        <option value="Airport">Airport</option>
-                                        <option value="Digital">Digital</option>
-                                        <option value="Outdoor">Outdoor</option>
-                                        <option value="Cinema">Cinema</option>
-                                        <option value="Office Space">Office-Space</option>
-                                        <option value="Mall Branding">Mall-Branding</option>
-                                        <option value="Transit Media">Transit-Media</option>
-                                        <option value="Non Traditional">Non Traditional</option>
-                                    </select>
-                                    <button type="button" class=""><span class="fa fa-search"></span></button>
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                
-                    
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="background-image: url(./img/new-york-1930656_1280.jpg);">  
-                    </div>
-                    <div class="carousel-item " style="background-image: url(./img/new-york-1930656_1280.jpg);"> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- end intro section -->
-
     <!-- brand section -->
     <!-- <section id="brand-section">
         <div class="container brand-container">
@@ -400,7 +284,6 @@
             </div>
         </div>
     </footer>
-
     <!--===== end footer section =====-->
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -420,9 +303,6 @@
 
     <script>
          $(document).ready(function() {
-            $('.introCarousel').carousel({
-                interval: 2000
-            });
             $('.testimonials-carousel').carousel({
                 interval: 1000
             });
@@ -449,47 +329,6 @@
                   }],
                 
             });
-            
-
-
-
-            //for search bar on header
-            var submitIcon = $('.searchbox-icon');
-            var inputBox = $('.searchbox-input');
-            var searchBox = $('.searchbox');
-            var isOpen = false;
-            submitIcon.click(function(){
-                if(isOpen == false){
-                    inputBox.addClass('searchbox-input-open');
-                    inputBox.focus();
-                    isOpen = true;
-                } else {
-                    inputBox.removeClass('searchbox-input-open');
-                    inputBox.focusout();
-                    isOpen = false;
-                }
-            });
-            submitIcon.mouseup(function(){
-                return false;
-            });
-            searchBox.mouseup(function(){
-                return false;
-            });
-            $(document).mouseup(function(){
-                if(isOpen == true){
-                    $('.searchbox-icon').css('display','block');
-                    submitIcon.click();
-                }
-            });  
-
-            //header scroll//
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                  $('#header').addClass('header-scrolled');
-                } else {
-                  $('#header').removeClass('header-scrolled');
-                }
-              });
 
             /* ------ jQuery for Easing min -- */
 
@@ -507,22 +346,7 @@
                 }
             });
 
-         });
-
-         
-        
-        
-        function buttonUp(){
-            var inputVal = $('.searchbox-input').val();
-            inputVal = $.trim(inputVal).length;
-            if( inputVal !== 0){
-                $('.searchbox-icon').css('display','none');
-            } else {
-                $('.searchbox-input').val('');
-                $('.searchbox-icon').css('display','block');
-            }
-        }
-
+        });
 
         //activate wow.js
         new WOW().init();

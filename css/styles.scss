@@ -198,104 +198,6 @@ p {
     height: 100vh;
 }
 
-
-/* header */
-#header {
-    background-color: rgba(255, 255, 255, 0.6);
-    position: fixed;
-    padding: 5px 0;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 1000;
-    color: rgb(26, 24, 24);
-    transition:all 0.5s
-}
-
-#header.header-scrolled {
-    background-color: white;
-    transition:all 0.5s
-}
-
-#header .logo {
-    margin-right: 50px;
-}
-
-#header .logo img{
-    height: 53px;
-}
-
-.nav-menu {
-    list-style: none;
-    margin: 0;
-}
-
-.nav-menu li {
-    display: inline-block;
-    a {
-        padding: 12px 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(26, 24, 24);
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-    }
-    a.active,a:hover {
-        font-weight: 700;
-        color: rgb(39, 36, 104);
-    }
-}
-
-#header .searchbox {
-    position: relative;
-    display: block;
-    /* float: right; */
-
-}
-#header .searchbox-input{
-    top:0;
-    right:0;
-    border:0;
-    outline:0;
-    background:#F2EAED;
-    width: 0;
-    height:50px;
-    margin:0;
-    padding:0px;
-    font-size:20px;
-    color:black;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius:5px;
-}
-#header .searchbox-input-open {
-    width: 100%;
-}
-#header .searchbox-icon,.searchbox-submit {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background:rgb(246, 75, 60);
-    display: block;
-}
-
-#header .login-link a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(26, 24, 24);
-    font-weight: 700;
-}
-/* end header */
-
 /* general section css */
 .section-title {
     text-align: center;
@@ -321,69 +223,6 @@ p {
     bottom: -15px;
     margin-top: 0px;
 }
-
-
-
-/* intro Carousel */
-
-#introCarousel {
-    position: relative;
-}
-
-#introCarousel .search-section {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    margin-bottom: 0px;
-    padding: 2rem 0px;
-    z-index: 1;
-}
-
-#introCarousel .search-section .search-container {
-    width: 100%;
-    background: white;
-    border-radius: 30px;
-}
-
-
-
-#introCarousel .carousel-item {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-}
-
-#introCarousel .search-section .search-container {
-    .select-srch {
-        height: 4rem;
-        font-size: 1.4em;
-        border: 0;
-        color: #777778;
-        width: 100%;
-        appearance: none;
-    }
-    .borderRight {
-        border-right: 1px solid #cecbcb;
-    }
-    i {
-        padding-right: 5px;
-        font-size: 18px;
-    }
-    button {
-        height: 3rem;
-        width: 3rem;
-        border-radius: 50%;
-        border: 0;
-        background-color: rgb(246, 75, 60);
-        color: white;
-        padding: 0px;
-        &:focus {
-            outline: none;
-        }
-    }
-}
-
 
 
  /* brand section */
@@ -607,6 +446,7 @@ p {
     background-color:  #eb5d1e;
     color: white;
 }
+
 // general for page //
 .page-title {
     position: absolute;
