@@ -22,12 +22,17 @@ p {
 	font-size: 14px;
 }
 
-
-/* -----helper classes----- */
+.dropdown-content li>a,.dropdown-content li>span {
+    color: #047AED;
+}
 
 ::-webkit-scrollbar {
 	display: none;
 }
+
+
+/* -----helper classes----- */
+
 
 .container-s {
 	max-width: 920px;
@@ -136,7 +141,7 @@ p {
     margin-left: 5%;
     background-color: white;
     border-radius: 50px;
-    padding: 10px 10px 10px;
+    padding: 10px 10px 10px 20px;
     border: 1px solid #dfdfdf;
     box-shadow: 0 4px 22px -10px rgba(0,0,0,.42);
     div{
