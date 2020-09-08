@@ -111,12 +111,12 @@
             <div class="col m12">
                 <div class="hero-list wow fadeIn">
                   <ul>
-                    <li><img class="" src="./img/heroimages/billboard.png" alt=""> </li>
-                    <li><img class="" src="./img/heroimages/newspaper.png" alt=""> </li>
-                    <li><img class="" src="./img/heroimages/radio.png" alt=""> </li>
-                    <li><img class="" src="./img/heroimages/truck.png" alt=""> </li>
-                    <li><img class="" src="./img/heroimages/tv-monitor.png" alt=""> </li>
-                    <li><img class="" src="./img/heroimages/vibration-symbol.png" alt=""> </li>
+                    <li><img class="tooltipped" src="./img/heroimages/billboard.png" alt="" data-position="bottom" data-tooltip="OOH"> </li>
+                    <li><img class="tooltipped" src="./img/heroimages/truck.png" alt="" data-position="bottom" data-tooltip="Transit"> </li>
+                    <li><img class="tooltipped" src="./img/heroimages/vibration-symbol.png" alt="" data-position="bottom" data-tooltip="Mobile"> </li>
+                    <li><img class="tooltipped" src="./img/heroimages/radio.png" alt="" data-position="bottom" data-tooltip="Radio"> </li>
+                    <li><img class="tooltipped" src="./img/heroimages/tv-monitor.png" alt="" data-position="bottom" data-tooltip="TV"> </li>
+                    <li><img class="tooltipped" src="./img/heroimages/newspaper.png" alt="" data-position="bottom" data-tooltip="News Paper"> </li>
                   </ul>
                 </div>
               </div>
@@ -434,6 +434,11 @@
                 coverTrigger:false,
                 alignment: 'left',
                 hover: true
+            });
+
+            var elems3 = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems3, {
+                delay: 50
             });
             
           });

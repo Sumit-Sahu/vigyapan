@@ -59,13 +59,14 @@ p {
 
 .navbar .nav-item .nav-link {
   color: #333347;
+  font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .navbar .nav-item .nav-link:hover {
   background-color: #FFFFFF;
-  color: #23D3D3;
+  color: #333347;
 }
 
 .btn-nav {
@@ -74,6 +75,7 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   margin: auto;
+  padding: 0px 30px;
   border-radius: 20px;
 }
 
@@ -115,8 +117,7 @@ p {
   margin: 0 auto;
   letter-spacing: 0;
   line-height: 1.6em;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 1.68rem;
 }
 
 .home .hero-list ul {
@@ -130,7 +131,7 @@ p {
 }
 
 .home .hero-list ul li img {
-  width: 90px;
+  width: 65px;
   height: auto;
   opacity: 0.6;
   cursor: pointer;
@@ -206,7 +207,7 @@ p {
 }
 
 .form-note p {
-  margin-top: 120px;
+  margin-top: 130px;
   font-size: 12px;
 }
 
