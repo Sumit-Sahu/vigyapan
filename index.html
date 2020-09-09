@@ -465,15 +465,17 @@
               minLength: 0, 
             });
             console.log(elems);
-            console.log(instances[0].count);
             
-            $('#location-input').on('keyup',function(){
-            console.log('keyup')
-            if ( instances[0].count === 0 ) {
-                console.log('no matches');
-                $('#location-input').val('');
-            }
-            })
+            //$('#location-input').on('keyup',function(event){
+            //console.log('keyup')
+            //console.log(instances.dropdown.$el[0].M_Dropdown.$el[0])
+            //console.log(instances[0].container.childNodes[0])
+            //if ( instances[0].count === 0 ) {
+            //    console.log('no matches');
+                //$('#location-input').val('');
+            //}
+           
+            //});
 
             var elems1 = document.querySelectorAll('.media-input');
             var instances1 = M.Autocomplete.init(elems1, {
@@ -492,13 +494,13 @@
             console.log(elems1);
             console.log(instances1[0].count);
             
-            $('#media-input').on('keyup',function(){
-            console.log('keyup')
-            if ( instances[0].count === 0 ) {
-                console.log('no matches');
-                $('#media-input').val('');
-            }
-            })
+            //$('#media-input').on('keyup',function(){
+            //console.log('keyup')
+            //if ( instances1[0].count === 0 ) {
+            //    console.log('no matches');
+            //    $('#media-input').val('');
+            //}
+            //});
 
             // dropdown on header
             var elems2 = document.querySelectorAll('.dropdown-trigger');
@@ -513,7 +515,7 @@
             });
 
             var elems3 = document.querySelectorAll('.tooltipped');
-            var instances = M.Tooltip.init(elems3, {
+            var instances3 = M.Tooltip.init(elems3, {
                 delay: 50
             });
             
