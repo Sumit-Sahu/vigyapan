@@ -33,29 +33,32 @@
 
 </head>
 <body>
-    <!-- navbar section -->
-    <div class="navbar-fixed">
-        <nav class="navbar">
-            <div class="nav-wrapper ">
-                <div class="container container-s">
-                    <a class="brand-logo" href="#">BookVigyapan</a>
-                    <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""></span>
-                    </button> -->
-                    <div class="right hide-on-med-and-down" id="navbarSupportedContent">
-                        <ul class="">
-                        <li class="nav-item"><a class="nav-link dropdown-trigger" href="#!" data-target="media-dropdown">Media</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aboutUs">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ContactUs">Contact Us</a></li>
-                        <li><a class="btn-nav btn" href="#">Sign Up</a></li>
-                        </ul>
+    <header>
+        <!-- navbar section -->
+        <div class="navbar-fixed">
+            <nav class="navbar">
+                <div class="nav-wrapper ">
+                    <div class="container container-s">
+                        <a class="brand-logo" href="#">BookVigyapan</a>
+                        <!-- <button class="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""></span>
+                        </button> -->
+                        <div class="right hide-on-med-and-down" id="navbarSupportedContent">
+                            <ul class="">
+                            <li class="nav-item"><a class="nav-link dropdown-trigger" href="#!" data-target="media-dropdown">Media</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aboutUs">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ContactUs">Contact Us</a></li>
+                            <li><a class="btn-nav btn" href="#">Sign Up</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
+        <!-- navbar section -->
+    </header>
     <!-- media dropdown content -->
     <ul id="media-dropdown" class="dropdown-content">
         <li><a href="#!">Traditional OOH </a></li>
@@ -75,7 +78,7 @@
       </ul>
 
     <!-- navbar end -->
-    <div class="main">
+    <main class="main">
         <!-- home section -->
         <section class="section home">
             <!-- hero section -->
@@ -228,7 +231,7 @@
             </div>
         </div> -->
         <!--===== end testimonials section =====-->
-    </div>
+    </main>
 
 
     <!-- footer -->
@@ -331,6 +334,16 @@
                   }],
                 
             });
+
+            //$(window).scroll(function() {
+            //    console.log($('.footer').height())
+            //    console.log($(window).scrollTop() + $(window).height()  >= $(document).height()- $('.footer').outerHeight()-2)
+            //    if($(window).scrollTop() + $(window).height()  >= $(document).height()- $('.footer').height()) {
+            //        $('.footer').css({zIndex:'1'});
+            //    } else {
+            //        $('.footer').css({zIndex:'-1'});
+            //    }
+            // });
 
             /* ------ jQuery for Easing min -- */
 

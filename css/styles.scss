@@ -10,10 +10,15 @@ body{
     width: 100%;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.main {
+main {
     background: #fff;
+    flex: 1 0 auto;
+    z-index: 1;
 }
 /* --- Common Styles ---*/
 
@@ -336,9 +341,8 @@ p {
 /* footer */
 .footer {
     position: sticky;
-    left: 0;
     bottom: 0;
-    z-index:-2;
+    left: 0;
     padding: 90px 0px 50px;
     background-color: rgb(239, 254, 255);
 }

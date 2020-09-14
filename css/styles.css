@@ -9,10 +9,22 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.main {
+main {
   background: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  z-index: 1;
 }
 
 /* --- Common Styles ---*/
@@ -371,9 +383,8 @@ p {
 .footer {
   position: -webkit-sticky;
   position: sticky;
-  left: 0;
   bottom: 0;
-  z-index: -2;
+  left: 0;
   padding: 90px 0px 50px;
   background-color: #effeff;
 }
