@@ -270,7 +270,12 @@ p {
 
 /*----- about us section -----*/
 .about-us {
-    height: 100vh;
+    .about-us-block {
+        text-align: center;
+        img {
+            width: 100px;
+        }
+    }
 }
 
  /* brand section */

@@ -311,8 +311,12 @@ p {
 }
 
 /*----- about us section -----*/
-.about-us {
-  height: 100vh;
+.about-us .about-us-block {
+  text-align: center;
+}
+
+.about-us .about-us-block img {
+  width: 100px;
 }
 
 /* brand section */

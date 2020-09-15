@@ -187,7 +187,23 @@
         <!-- pricing end -->
         <!-- about us section -->
         <section class="section about-us" id="aboutUs">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo sapiente fuga eaque eius ad dolorum suscipit nihil. Doloribus et velit quia ipsam odit, earum debitis fugit laboriosam, tempore distinctio ipsa.
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+                <div class="card-panel">
+                    <div class="row">
+                        <div class="col m6 about-us-block">
+                            <img src="./img/about1.png" alt="">
+                            <p class="center">BookVigyapan is a team of young entrepreneurs who are passionate about offering practical and technology driven solutions to everyone who wants to promote their business through Out Of Home (OOH) marketing and other solutions available.</p>
+                        </div>
+                        <div class="col m6 about-us-block">
+                            <img src="./img/about2.png" alt="">
+                            <p class="center">We strive to deliver direct visibility of the media assets and maximum reach to your brand in all the major metropolitans and Tier II cities of India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- about us end -->
 
@@ -409,9 +425,6 @@
 
         });
 
-        //activate wow.js
-        new WOW().init();
-
         document.addEventListener('DOMContentLoaded', function() {
             // Autocomplete for location and media input(to add autocomplete dropdown below input to suggest possible values)
             var elems = document.querySelectorAll('.location-input');
@@ -578,6 +591,9 @@
             var instances3 = M.Tooltip.init(elems3, {
                 delay: 50
             });
+
+            //activate wow.js
+            new WOW().init();
             
           });
     </script>
