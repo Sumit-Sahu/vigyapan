@@ -208,7 +208,32 @@ p {
 
 /*----- feature section -----*/
 .features {
-    height: 100vh;
+    .feature-block {
+        display: flex;
+        flex-direction: row;
+        .feature-img {
+            width: 100px;
+            height: 100px;
+            margin: 12px;
+            background-color: #F7F7F8;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .feature-content {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            p {
+                margin: 12px;
+            }
+        }
+    }
 }
 
 /*----- pricing section -----*/

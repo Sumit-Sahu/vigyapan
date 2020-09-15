@@ -242,8 +242,50 @@ p {
 }
 
 /*----- feature section -----*/
-.features {
-  height: 100vh;
+.features .feature-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.features .feature-block .feature-img {
+  width: 100px;
+  height: 100px;
+  margin: 12px;
+  background-color: #F7F7F8;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .feature-block .feature-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.features .feature-block .feature-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.features .feature-block .feature-content p {
+  margin: 12px;
 }
 
 /*----- pricing section -----*/
