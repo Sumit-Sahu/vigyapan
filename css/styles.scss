@@ -446,16 +446,16 @@ p {
         margin-bottom: 35px;
         position: relative;
         text-transform: capitalize;
-        &::after {
-            content: "";
-            position: absolute;
-            background-color: rgb(246, 75, 60);
-            height: 2px;
-            width: 40px;
-            left: 0;
-            bottom: -15px;
-            margin-top: 0px;
-        }
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     background-color: rgb(246, 75, 60);
+        //     height: 2px;
+        //     width: 40px;
+        //     left: 0;
+        //     bottom: -15px;
+        //     margin-top: 0px;
+        // }
     }
 }
 .footer-widget .footer-contact {
@@ -492,18 +492,18 @@ p {
         line-height: 22px;
         font-family: 'Roboto', sans-serif;
         position: relative;
-        padding-left: 15px;
+        // padding-left: 15px;
         padding-bottom: 6px;
-        &::before {
-            color: #047aed;
-            content: '\f105';
-            font-family: "FontAwesome";
-            position: absolute;
-            top: 2px;
-            left: 0px;
-            font-size: 14px;
-            line-height: 16px;
-        }
+        // &::before {
+        //     color: #047aed;
+        //     content: '\f105';
+        //     font-family: "FontAwesome";
+        //     position: absolute;
+        //     top: 2px;
+        //     left: 0px;
+        //     font-size: 14px;
+        //     line-height: 16px;
+        // }
         &:hover {
             color: #97a6b5;
         }

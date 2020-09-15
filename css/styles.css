@@ -506,17 +506,6 @@ p {
   text-transform: capitalize;
 }
 
-.footer h3.title::after {
-  content: "";
-  position: absolute;
-  background-color: #f64b3c;
-  height: 2px;
-  width: 40px;
-  left: 0;
-  bottom: -15px;
-  margin-top: 0px;
-}
-
 .footer-widget .footer-contact {
   margin-top: 20px;
 }
@@ -559,19 +548,7 @@ p {
   line-height: 22px;
   font-family: 'Roboto', sans-serif;
   position: relative;
-  padding-left: 15px;
   padding-bottom: 6px;
-}
-
-.footer-widget.quick-links ul li a::before {
-  color: #047aed;
-  content: '\f105';
-  font-family: "FontAwesome";
-  position: absolute;
-  top: 2px;
-  left: 0px;
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .footer-widget.quick-links ul li a:hover {
