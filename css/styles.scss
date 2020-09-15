@@ -265,7 +265,65 @@ p {
 /*----- pricing section -----*/
 .pricing {
     background-color: #F7F7F8;
-    height: 100vh;
+    .section-title p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+        color: #8B92AB;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .table-left,.table-right {
+        text-align: center;
+        padding: 15%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        background-color: white;
+        border: transparent;
+        max-width: 400px;
+        h3 {
+            font-size: 21px;
+            font-weight: 600;
+            color: #505050;
+            margin-bottom: 15px;
+        }
+        .pricing-details span {
+            display: inline-block;
+            font-family: 'Open Sans';
+            font-size: 42px;
+            font-weight: 300;
+            color: #505050;
+        }
+        button {
+            padding: 0 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 25px 0;
+            text-transform: uppercase;
+            border-radius: 50px;
+        }
+    }
+    .table-left {
+        button {
+            background-color: #047aed;
+            color: white;
+        }
+    }
+    .table-right {
+        background-color: #047aed;
+        color: white;
+        h3 {
+            color: #FFFFFF
+        }
+        .pricing-details span {
+            color: white;
+        }
+        button {
+            background-color: white;
+            color: #047aed;
+        }
+    }
 }
 
 /*----- about us section -----*/
