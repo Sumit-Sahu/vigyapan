@@ -238,8 +238,8 @@ p {
 /*----- feature section -----*/
 .features {
     .feature-block {
-        display: flex;
-        flex-direction: row;
+        // display: flex;
+        // flex-direction: row;
         .feature-img {
             width: 100px;
             height: 100px;
@@ -257,7 +257,7 @@ p {
         .feature-content {
             display: flex;
             align-items: center;
-            width: 80%;
+            // width: 80%;
             p {
                 margin: 12px;
             }
