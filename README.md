@@ -1,9 +1,8 @@
 # Vigyapan.com ##
-Repository for website building.
-![version](https://img.shields.io/badge/version-1.0.0-blue)
+This is landing page I proposed for a startup Book Vigyapan.
 
 ## Dependencies
-* bootstrap
+* Materialize Css
 * font-awesome
 * jquery
 * popper.js
@@ -16,7 +15,7 @@ Repository for website building.
 ## Installation
 #### clone this repository by running
 ```bash
-git clone https://github.com/almightyads/ad-website.git
+git clone https://github.com/Sumit-Sahu/vigyapan.git
 ```
 or by simply pressing the Clone or Download button and using your own preferred way of obtaining a working copy of the repository.
 #### Requirements
